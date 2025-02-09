@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const logo = require("./logo.svg") as string;
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +18,7 @@ function App() {
         >
           Comarlau.com
         </a>
+        <a>App 1</a>
       </header>
     </div>
   );
