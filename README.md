@@ -1,3 +1,3 @@
 # Personal portfolio website
 
-WIP
+A React webpage that showcases my personal projects.
