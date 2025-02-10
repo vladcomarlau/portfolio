@@ -10,11 +10,12 @@ COPY . .
 # CREATE STATIC FILES
 RUN npm run build
 
-# NGINX SERVER
+# NGINX SERVER 
 FROM nginx:stable-alpine
 RUN rm -rf /usr/share/nginx/html/*
 # COPY STATIC FILES
 COPY --from=build /app/build /usr/share/nginx/html
-COPY default.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/build /usr/share/nginx/html/a
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
