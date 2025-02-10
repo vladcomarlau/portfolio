@@ -1,4 +1,6 @@
 FROM node:18-alpine AS build
+LABEL authors="vladcomarlau"
+
 WORKDIR /app
 # Copy package.json and package-lock.json (or yarn.lock)
 COPY package.json package-lock.json* ./
@@ -13,5 +15,6 @@ FROM nginx:stable-alpine
 RUN rm -rf /usr/share/nginx/html/*
 # COPY STATIC FILES
 COPY --from=build /app/build /usr/share/nginx/html
+COPY default.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
