@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  const logo = require("./logo.svg") as string;
+  const logo: string = require("./logo.svg").default;
   return (
     <div className="App">
       <header className="App-header">
