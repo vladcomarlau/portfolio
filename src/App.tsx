@@ -1,15 +1,17 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
-import Home from "./pages/Home"
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from "./pages/About"
+import Home from './pages/Home';
 
-function App() {
-  return (
-    <HashRouter>  
+function App() { 
+  return (  
+    <BrowserRouter>  
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
