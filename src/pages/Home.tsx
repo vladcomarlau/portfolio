@@ -8,7 +8,7 @@ export default function Home() {
 
     return(
         <> 
-            Portfolio home - Kaniko test git 6 - vs
+            Portfolio home - Kaniko test git 7
             <button onClick={redirect}>go to business-management web app</button>
         </>
     );
