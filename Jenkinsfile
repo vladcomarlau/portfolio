@@ -34,6 +34,12 @@ spec:
     }
   }
   stages {
+    stage('Checkout') {
+        steps {
+            // Explicitly checkout the repository.
+            git url: 'https://github.com/vladcomarlau/portfolio.git', branch: 'master'
+        }
+    }
     stage('Build & Push Image') {
         steps {
             container('kaniko') {
@@ -45,7 +51,8 @@ spec:
         steps {
             container('kubectl') {
               sh '''
-                kubectl -n default rollout restart deployment/portfolio
+                kubectl -n default apply -f portfolio-frontend.yaml
+                kubectl -n default rollout restart deployment/portfolio-frontend
               '''
             }
         }
