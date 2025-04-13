@@ -1,6 +1,6 @@
 export default function Home() {
   const redirect = () => {
-    window.location.href ='https://comarlau.com/business-management/';
+    window.location.href ='https://comarlau.com/business/';
   }
 
   return (
