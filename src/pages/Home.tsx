@@ -1,14 +1,44 @@
+import { Canvas } from '@react-three/fiber'
+import { Suspense } from 'react'
+import Title from '../components/Title'
+import { OrbitControls } from '@react-three/drei'
+
 export default function Home() {
   const redirect = () => {
     window.location.href ='https://comarlau.com/business/';
   }
 
+  const background = (
+    <div style={{ width: "100vw", height: "100vh",
+      position:"absolute",
+      top: "0",
+      left: "0",
+      zIndex: "-100"
+     }}>
+      <Canvas>
+      <ambientLight intensity={0.5} />
+      <directionalLight
+        castShadow
+        position={[10, 10, 5]} />
+      <Suspense fallback={null}>
+        <Title />
+      </Suspense>
+      <OrbitControls />
+    </Canvas>
+    </div>
+  )
+
+
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Vlad Comarlau
-      </h1>
-      <button onClick={redirect}>go to business-management web app</button>
+      {background}
+
+      <div style={{zIndex:"100"}}>
+        <h1 className="text-3xl font-bold underline">
+          Vlad Comarlau
+        </h1>
+        <button onClick={redirect}>go to business-management web app</button>
+      </div>
     </>
   )
 }
