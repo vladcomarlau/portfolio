@@ -15,7 +15,6 @@ const Title = () => {
     <>
         <primitive object={obj}
           position={[1, 0, 0]}
-          
         />
     </>
   )

@@ -35,9 +35,11 @@ export default function Home() {
 
       <div style={{zIndex:"100"}}>
         <h1 className="text-3xl font-bold underline">
-          Vlad Comarlau
+          Vlad-Constantin Comarlau
         </h1>
-        <button onClick={redirect}>go to business-management web app</button>
+        <button className='shadow-xl'
+          onClick={redirect}>
+            go to business-management web app</button>
       </div>
     </>
   )
