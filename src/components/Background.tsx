@@ -7,6 +7,7 @@ const Background = () => {
   let rotY = 0;
   useFrame((state, delta) => {
     rotY += delta;
+    state;
     obj.rotateY(Math.sin(rotY*0.5)*0.002);
     obj.rotateX(Math.cos(rotY*0.5)*0.002);
   })
