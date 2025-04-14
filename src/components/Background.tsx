@@ -1,7 +1,7 @@
-import { useLoader, useFrame, useThree} from '@react-three/fiber'
+import { useLoader, useFrame} from '@react-three/fiber'
 import { OBJLoader } from 'three/examples/jsm/Addons.js'
 
-const Title = () => {
+const Background = () => {
   const obj = useLoader(OBJLoader, '/obj.obj')
 
   let rotY = 0;
@@ -20,4 +20,4 @@ const Title = () => {
   )
 }
 
-export default Title
+export default Background

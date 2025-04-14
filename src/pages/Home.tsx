@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import { Suspense } from 'react'
-import Title from '../components/Title'
+import Background from '../components/Background'
 import { OrbitControls } from '@react-three/drei'
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
         castShadow
         position={[10, 10, 5]} />
       <Suspense fallback={null}>
-        <Title />
+        <Background />
       </Suspense>
       <OrbitControls />
     </Canvas>
