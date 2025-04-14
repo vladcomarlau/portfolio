@@ -1,5 +1,23 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: garden --default, dark --prefersdark;
+  themes: nord --default, dracula --prefersdark;
 }
 
+@layer utilities {
+  .glass {
+    @apply bg-white/30 dark:bg-gray-900/45;
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.wiggle {
+  animation: wiggle 0.4s ease-in-out infinite;
+}

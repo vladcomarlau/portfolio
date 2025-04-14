@@ -2,7 +2,7 @@ export default function Card(props)  {
     return(
       <>
         <div className="p-2 lg:w-1/3 md:w-1/2 w-1/1">
-          <div className="card bg-base-100 shadow-sm">
+          <div className="card shadow-sm backdrop-blur-xl">
             <figure>
               <img
                 src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
