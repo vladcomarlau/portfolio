@@ -2,7 +2,7 @@ import Card from '../Card'
 
 export default function Projects() {
     const divider = (title:string) => {
-        return(<div className="h-px bg-gray-300 mx-2 my-5 w-full"><div style={{marginTop:"-27px"}} className='badge badge-sm justify-center'>{title}</div></div>)
+        return(<div className="h-px bg-gray-300 mx-2 my-5 w-full"><div style={{marginTop:"-27px"}} className='badge badge-soft justify-center'>{title}</div></div>)
     }
 
     return (

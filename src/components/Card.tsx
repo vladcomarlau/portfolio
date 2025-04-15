@@ -1,4 +1,4 @@
-export default function Card(props)  {
+export default function Card(props:any)  {
     return(
       <>
         <div className="p-2 lg:w-1/3 md:w-1/2 w-1/1">

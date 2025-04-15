@@ -43,8 +43,8 @@ export default function Home() {
 
   const menu = (
     <div className="tabs tabs-box glass backdrop-blur-xl m-3">
-      <input type="radio" name="my_tabs_1" className="tab" aria-label="Projects" onClick={clickProjects} checked={homeSubPage==1} />
-      <input type="radio" name="my_tabs_1" className="tab" aria-label="CV / Resume" onClick={clickCV} checked={homeSubPage==0}/>
+      <input type="radio" name="my_tabs_1" className="tab text-lg font-light" aria-label="Projects" onClick={clickProjects} checked={homeSubPage==1} />
+      <input type="radio" name="my_tabs_1" className="tab text-lg font-light" aria-label="CV / Resume" onClick={clickCV} checked={homeSubPage==0}/>
     </div>
   )
 
