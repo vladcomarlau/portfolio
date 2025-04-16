@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState} from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Suspense } from 'react'
 import Background from '../components/Background'
@@ -10,10 +10,6 @@ import Footer from '../components/Footer'
 
 export default function Home() {
   const [homeSubPage, setHomeSubPage] = useState(1);
-
-  const redirect = () => {
-    window.location.href ='https://comarlau.com/business/';
-  }
 
   const background = (
     <div 
@@ -44,7 +40,7 @@ export default function Home() {
   }
 
   const menu = (
-    <div className="tabs tabs-box glass backdrop-blur-xl m-3 rounded-full">
+    <div className="tabs tabs-box glass backdrop-blur-xl m-3 rounded-full p-2">
       <input type="radio" name="my_tabs_1" className="tab text-lg font-light"
       style={{borderRadius:"20px"}}
       aria-label="Projects" onClick={clickProjects} checked={homeSubPage==1} />

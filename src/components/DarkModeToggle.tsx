@@ -16,7 +16,7 @@ export default function DarkModeToggle() {
    return (
        <label 
         style={{ zIndex: "100", right: "0px", top: "0px", margin: "20px"}} 
-        className="swap swap-rotate fixed">
+        className="swap swap-rotate fixed glass rounded-full p-2">
            <input type="checkbox" className="theme-controller" value="aqua" checked={isDark} onChange={() => setisDark(!isDark)}/>
            <svg
                className="swap-off h-10 w-10 fill-current"
