@@ -1,15 +1,25 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: cupcake --default, abyss --prefersdark;
+  themes: cupcake --default, dark --prefersdark;
 }
 
 @layer utilities {
   .glass {
-    @apply bg-white/30;
+    @apply bg-white/50;
   }
 
-  [data-theme="abyss"] .glass {
-    @apply bg-gray-900/45;
+  [data-theme="dark"] .glass {
+    @apply bg-indigo-800/30;
+  }
+
+  .background {
+    background: rgba(216, 233, 237, 1);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(216, 233, 237, 1) 100%);
+  }
+
+  [data-theme="dark"] .background  {
+    background: rgba(16, 20, 71, 1);
+    background: linear-gradient(0deg, rgb(4, 0, 106) 0%, rgb(140, 0, 255) 100%);
   }
 }
 

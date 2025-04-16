@@ -7,7 +7,7 @@ export default function DarkModeToggle() {
     useEffect(() => {
         localStorage.setItem('isDark', JSON.stringify(isDark));
         if(isDark) {
-            document.documentElement.setAttribute('data-theme', 'abyss');
+            document.documentElement.setAttribute('data-theme', 'dark');
         } else {
             document.documentElement.setAttribute('data-theme', 'cupcake');
         }
@@ -15,7 +15,7 @@ export default function DarkModeToggle() {
 
    return (
        <label 
-        style={{ zIndex: "100", right: "0px", top: "0px", margin: "20px"}} 
+        style={{ zIndex: "100", right: "0px", bottom: "0px", margin: "17px"}}
         className="swap swap-rotate fixed glass rounded-full p-2">
            <input type="checkbox" className="theme-controller" value="aqua" checked={isDark} onChange={() => setisDark(!isDark)}/>
            <svg
