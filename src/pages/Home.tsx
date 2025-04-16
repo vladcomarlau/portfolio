@@ -5,6 +5,8 @@ import Background from '../components/Background'
 import Title from '../components/Title'
 import Projects from '../components/homeSubpages/Projects'
 import CV from '../components/homeSubpages/CV'
+import DarkModeToggle from '../components/DarkModeToggle'
+import Footer from '../components/Footer'
 
 export default function Home() {
   const [homeSubPage, setHomeSubPage] = useState(1);
@@ -42,16 +44,21 @@ export default function Home() {
   }
 
   const menu = (
-    <div className="tabs tabs-box glass backdrop-blur-xl m-3">
-      <input type="radio" name="my_tabs_1" className="tab text-lg font-light" aria-label="Projects" onClick={clickProjects} checked={homeSubPage==1} />
-      <input type="radio" name="my_tabs_1" className="tab text-lg font-light" aria-label="CV / Resume" onClick={clickCV} checked={homeSubPage==0}/>
+    <div className="tabs tabs-box glass backdrop-blur-xl m-3 rounded-full">
+      <input type="radio" name="my_tabs_1" className="tab text-lg font-light"
+      style={{borderRadius:"20px"}}
+      aria-label="Projects" onClick={clickProjects} checked={homeSubPage==1} />
+      <input type="radio" name="my_tabs_1" className="tab text-lg font-light" 
+      style={{ borderRadius: "20px" }}
+      aria-label="CV / Resume" onClick={clickCV} checked={homeSubPage==0}/>
     </div>
   )
 
   return (
     <>
       {background}
-      <div style={{zIndex:"100"}}>
+      <DarkModeToggle/>
+      <div style={{zIndex:"100"}} className=''>
         <div className='mt-[30vh] mx-auto w-115 my-3'>
           <Title/>
         </div>
@@ -61,6 +68,7 @@ export default function Home() {
           {homeSubPage == 1 && <Projects/>}
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
