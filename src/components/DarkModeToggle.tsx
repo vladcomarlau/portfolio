@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function DarkModeToggle() {    
     const [isDark, setisDark] = useState(
-        JSON.parse(localStorage.getItem('isDark') ?? 'false')
+        JSON.parse(localStorage.getItem('isDark') ?? 'true')
     );
     useEffect(() => {
         localStorage.setItem('isDark', JSON.stringify(isDark));

@@ -9,8 +9,7 @@ import CV from '../homeSubpages/CV'
 import DarkModeToggle from '../DarkModeToggle'
 import Footer from '../Footer'
 import MenuBar from '../MenuBar'
-import { Bloom, DepthOfField, EffectComposer, Noise, Vignette } from '@react-three/postprocessing'
-import { KernelSize, Resolution } from 'postprocessing'
+import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing'
 
 export default function Home() {
   const [homeSubPage, setHomeSubPage] = useState(1);
@@ -32,6 +31,7 @@ export default function Home() {
       <Canvas shadows>
         <EffectComposer>
           <Bloom luminanceThreshold={6} luminanceSmoothing={0.1} height={360} />
+
         </EffectComposer>
         
         <Environment preset="sunset" />
@@ -56,7 +56,7 @@ export default function Home() {
   )
 
   const menu = (
-    <div className="tabs tabs-box glass backdrop-blur-xl m-3 rounded-full p-3"
+    <div className="tabs tabs-box glass m-3 rounded-full p-1"
     style={{overflowY:"auto"}}>
       <input type="radio" name="my_tabs_1" className="btn btn-base"
       style={{borderRadius:"20px"}}

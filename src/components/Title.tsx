@@ -11,7 +11,7 @@ const Title = () => {
 
             <div style={{marginTop:"-15px"}} 
             className="text-5xl p-3 text-center font-bold rounded-box rounded-b-none text-shadow-md">
-              Vlad-Constantin Comarlau 
+              Vlad-Constantin Comârlău 
             </div>
 
             <ContactBadges/>

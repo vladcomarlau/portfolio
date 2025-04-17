@@ -29,7 +29,7 @@ const Background = () => {
   })
   
   return (
-    <primitive object={obj.scene} position={[0.3, 2.5, -5]} />
+    <primitive object={obj.scene} position={[0.3, 2.8, -6]} />
   )
 }
 
