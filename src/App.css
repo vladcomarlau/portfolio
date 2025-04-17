@@ -14,7 +14,7 @@
 
   .background {
     background: rgba(216, 233, 237, 1);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(216, 233, 237, 1) 100%);
+    background: linear-gradient(180deg, rgb(15, 19, 74) 00%, rgba(216, 233, 237, 1) 40%);
   }
 
   [data-theme="dark"] .background  {

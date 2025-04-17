@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { Suspense } from 'react'
 import { useInView } from 'react-intersection-observer'
+import { Environment } from '@react-three/drei'
 import Background from '../Background'
 import Title from '../Title'
 import Projects from '../homeSubpages/Projects'
@@ -9,12 +9,14 @@ import CV from '../homeSubpages/CV'
 import DarkModeToggle from '../DarkModeToggle'
 import Footer from '../Footer'
 import MenuBar from '../MenuBar'
+import { Bloom, DepthOfField, EffectComposer, Noise, Vignette } from '@react-three/postprocessing'
+import { KernelSize, Resolution } from 'postprocessing'
 
 export default function Home() {
   const [homeSubPage, setHomeSubPage] = useState(1);
 
   const { ref: titleRef, inView: isMenuBarVisible } = useInView({
-    threshold: 0, // = any pixel counts as visible
+    threshold: 0,
     rootMargin: '0px',
   });
 
@@ -25,15 +27,30 @@ export default function Home() {
         height: "100vh",
         zIndex: "-100",
         position:"fixed",
-        marginTop: "-30vh"
+        top: "0px"
       }}>
-      <Canvas>
-        <ambientLight intensity={0.5}/>
+      <Canvas shadows>
+        <EffectComposer>
+          <Bloom luminanceThreshold={6} luminanceSmoothing={0.1} height={360} />
+        </EffectComposer>
+        
+        <Environment preset="sunset" />
+        <Background />
+
         <directionalLight
-          position={[10, 10, 5]} />
-        <Suspense fallback={null}>
-          <Background/>
-        </Suspense>
+          intensity={1.2}
+          position={[-5, 10, 15]}
+          castShadow
+          shadow-mapSize-width={2048}
+          shadow-mapSize-height={2048}
+          shadow-camera-near={0.5}
+          shadow-camera-far={50}
+          shadow-camera-left={-10}
+          shadow-camera-right={10}
+          shadow-camera-top={10}
+          shadow-camera-bottom={-10}
+          shadow-bias={-0.0005}/>
+        
       </Canvas>
     </div>
   )
@@ -55,7 +72,7 @@ export default function Home() {
       {background}
       <DarkModeToggle/>
       <div style={{zIndex:"100"}}>
-        <div className='mt-[30vh] mx-auto w-115 my-3' ref={titleRef}>
+        <div className='mt-[40vh] mx-auto w-115 my-3' ref={titleRef}>
           <Title/>
         </div>
         {!isMenuBarVisible && <MenuBar/>}
