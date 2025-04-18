@@ -1,23 +1,17 @@
-import { useState } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { useInView } from 'react-intersection-observer'
-import { Environment } from '@react-three/drei'
-import Background from '../Background'
+import { useState, useRef } from 'react'
 import Title from '../Title'
 import Projects from '../homeSubpages/Projects'
 import CV from '../homeSubpages/CV'
-import DarkModeToggle from '../DarkModeToggle'
 import Footer from '../Footer'
+import ContactBadges from '../ContactBadges'
+import { motion, useTransform, useScroll, useInView, AnimatePresence } from "motion/react"
 import MenuBar from '../MenuBar'
-import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing'
 
 export default function Home() {
   const [homeSubPage, setHomeSubPage] = useState(1);
+  const [isTitleVisible, setIsTitleVisible] = useState(false);
 
-  const { ref: titleRef, inView: isMenuBarVisible } = useInView({
-    threshold: 0,
-    rootMargin: '0px',
-  });
+  const targetRef = useRef<HTMLDivElement>(null);
 
   const background = (
     <div className='background' 
@@ -27,33 +21,30 @@ export default function Home() {
         zIndex: "-100",
         position:"fixed",
         top: "0px"
-      }}>
-      
-    </div>
-  )
-
-  const menu = (
-    <div className="tabs tabs-box glass m-3 rounded-full p-1"
-    style={{overflowY:"auto"}}>
-      <input type="radio" name="my_tabs_1" className="btn btn-base"
-      style={{borderRadius:"20px"}}
-      aria-label="Projects" onClick={() => setHomeSubPage(1)} checked={homeSubPage==1} />
-      <input type="radio" name="my_tabs_1" className="btn btn-base mx-1" 
-      style={{ borderRadius: "20px" }}
-      aria-label="CV / Resume" onClick={() => setHomeSubPage(0)} checked={homeSubPage==0}/>
-    </div>
+      }}/>
   )
 
   return (
     <>
       {background}
+      <div className='gradientFade h-30'>test</div>
       <div style={{zIndex:"100"}}>
-        <div className='mt-30 mx-auto w-115 my-3' ref={titleRef}>
-          <Title/>
+        <motion.div
+        onViewportEnter={() => setIsTitleVisible(true)}
+        onViewportLeave={() => setIsTitleVisible(false)}>
+          <Title />
+          <div className='mx-20 text-right'>
+            <ContactBadges />
+          </div>
+        </motion.div>
+        <div className='fixed w-full mt-5'
+          style={{ top: "0", zIndex: "300" }}>
+          <AnimatePresence>
+            {!isTitleVisible && <MenuBar setHomeSubPage={setHomeSubPage}/>}
+          </AnimatePresence>
         </div>
-        {!isMenuBarVisible && <MenuBar/>}
+        
         <div className='md:mx-20 mt-30'>
-          {menu}
           {homeSubPage == 0 && <CV/>}
           {homeSubPage == 1 && <Projects/>}
         </div>

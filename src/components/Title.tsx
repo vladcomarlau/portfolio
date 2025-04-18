@@ -1,19 +1,22 @@
-import ContactBadges from "./ContactBadges"
+import { motion } from "motion/react"
 
 const Title = () => {
   return (
     <>
-      <div className="glass rounded-box">
-          <div className="shadow-sm rounded-box py-6">
-            
-            <div style={{marginTop:"-15px"}} 
-            className="text-5xl p-3 text-center font-bold rounded-box rounded-b-none text-shadow-md">
-              Vlad-Constantin Comârlău 
-            </div>
-
-            <ContactBadges/>
+      <motion.div 
+        initial={{y:-100, scale: 0.8, opacity: 0 }} 
+        whileInView={{y:0, scale: 1.0, opacity: 1 }}
+        transition={{ type: "spring", duration: 1 }}>
+        <div
+          className="font-custom italic text-6xl md:text-8xl p-3 font-extrabold 
+          rounded-box rounded-b-none text-shadow-md text-base-100
+          md:mx-20 mx-5">
+          VLAD-CONSTANTIN
+          <div>
+            COMARLAU
           </div>
-      </div>
+        </div>
+      </motion.div>
     </>
   )
 }

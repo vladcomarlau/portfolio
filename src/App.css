@@ -1,39 +1,74 @@
+
 @import "tailwindcss";
 
 @plugin "daisyui" {
-  themes: cupcake --default, dark --prefersdark;
+  themes: cupcake --default;
 }
 
+.background {
+  background-color: rgb(29, 29, 29);
 
-@layer utilities {
-  .glass {
-    @apply bg-white/50;
-  }
+  /* Two gradients: one vertical, one horizontal */
+  background-image:
+    repeating-linear-gradient(to right,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 50px),
+    repeating-linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 50px);
 
-  [data-theme="dark"] .glass {
-    @apply bg-indigo-800/30;
-  }
-
-  .background {
-    background: rgba(216, 233, 237, 1);
-    background: linear-gradient(180deg, rgb(15, 19, 74) 00%, rgba(216, 233, 237, 1) 40%);
-  }
-
-  [data-theme="dark"] .background  {
-    background: rgba(16, 20, 71, 1);
-    background: linear-gradient(0deg, rgb(4, 0, 106) 0%, rgb(140, 0, 255) 100%);
-  }
+  /* Size of each grid cell */
+  background-size: 50px 50px;
 }
 
-@keyframes wiggle {
-  0%, 100% {
-    transform: rotate(-2deg);
-  }
-  50% {
-    transform: rotate(2deg);
-  }
+.font-link {
+  font-family: 'Hanalei Fill', cursive;
 }
 
-.wiggle {
-  animation: wiggle 0.4s ease-in-out infinite;
+@font-face {
+  font-family: "futuraOblique";
+  src: local("futuraOblique"),
+    url("./assets//fonts/SpecialGothicExpandedOne-Regular.ttf") format("trueType");
+  font-weight: bold;
 }
+
+.font-custom {
+  font-family: "futuraOblique";
+}
+
+.customGlass {
+  @apply rounded-full backdrop-blur-3xl border border-stone-200/15 bg-stone-400/30 shadow-sm
+}
+
+.customDarkGlass {
+  @apply rounded-full backdrop-blur-3xl border border-stone-100/10 bg-stone-300/20
+}
+
+.customButton {
+  @apply border border-stone-200/0 rounded-field px-3 py-2 pt-2 select-none cursor-pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.customButton:hover {
+  @apply border border-stone-200/15 bg-stone-950/30 rounded-field px-3 py-2 pt-2 cursor-pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.textGradient {
+  background: linear-gradient(120deg, rgba(255, 255, 255, 1) 50%, rgb(117, 107, 107) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientFade {
+  background: linear-gradient(180deg, rgba(29,29,29, 1)20%, rgba(29,29,29,0) 100%);
+}
+
+.gradientFadeReverse {
+  background: linear-gradient(0deg, rgba(29, 29, 29, 1) 0%, rgba(29, 29, 29, 0) 100%);
+}
+
