@@ -3,8 +3,8 @@ import { motion } from "motion/react"
 export default function ContactBadges() {
     return(
         <>
-            <span className="px-5">
-                <span>
+            <span className="px-1">
+                <span className="px-1">
                     <motion.button
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}

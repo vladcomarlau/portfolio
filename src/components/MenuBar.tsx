@@ -7,7 +7,7 @@ export default function MenuBar(props:any) {
             animate={{ y: 0, scale: 1.0 }}
             exit={{ y: -100, scale: 0.2 }}
             transition={{ type: "spring", duration: 1 }}>
-            <div className="customGlass md:mx-45 mx-21 py-1 text-shadow-md"
+            <div className="customGlass md:mx-45 mx-5 py-1 text-shadow-md"
             style={{padding:"6px 0px 5px 0px", border:"1px solid rgba(255,255,255,0.2)"}}>
                 <span className="text-base-100 text-md font-gothic italic cursor-default px-1"
                     style={{ margin: "5px 10px 3px 25px" }}>
