@@ -1,18 +1,16 @@
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import Title from '../Title'
 import Projects from '../homeSubpages/Projects'
 import CV from '../homeSubpages/CV'
 import Footer from '../Footer'
 import ContactBadges from '../ContactBadges'
-import { motion, useTransform, useScroll, useInView, AnimatePresence } from "motion/react"
+import { motion, AnimatePresence } from "motion/react"
 import MenuBar from '../MenuBar'
 import { Typewriter } from '../Typewriter'
 
 export default function Home() {
   const [homeSubPage, setHomeSubPage] = useState(1);
   const [isTitleVisible, setIsTitleVisible] = useState(false);
-
-  const targetRef = useRef<HTMLDivElement>(null);
 
   const background = (
     <div className='background' 
