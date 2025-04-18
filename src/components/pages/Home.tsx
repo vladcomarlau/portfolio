@@ -28,30 +28,7 @@ export default function Home() {
         position:"fixed",
         top: "0px"
       }}>
-      <Canvas shadows>
-        <EffectComposer>
-          <Bloom luminanceThreshold={6} luminanceSmoothing={0.1} height={360} />
-
-        </EffectComposer>
-        
-        <Environment preset="sunset" />
-        <Background />
-
-        <directionalLight
-          intensity={1.2}
-          position={[-5, 10, 15]}
-          castShadow
-          shadow-mapSize-width={2048}
-          shadow-mapSize-height={2048}
-          shadow-camera-near={0.5}
-          shadow-camera-far={50}
-          shadow-camera-left={-10}
-          shadow-camera-right={10}
-          shadow-camera-top={10}
-          shadow-camera-bottom={-10}
-          shadow-bias={-0.0005}/>
-        
-      </Canvas>
+      
     </div>
   )
 
@@ -70,9 +47,8 @@ export default function Home() {
   return (
     <>
       {background}
-      <DarkModeToggle/>
       <div style={{zIndex:"100"}}>
-        <div className='mt-[40vh] mx-auto w-115 my-3' ref={titleRef}>
+        <div className='mt-30 mx-auto w-115 my-3' ref={titleRef}>
           <Title/>
         </div>
         {!isMenuBarVisible && <MenuBar/>}
