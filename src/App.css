@@ -24,28 +24,45 @@
   /* Size of each grid cell */
   background-size: 50px 50px;
 }
-
-.font-link {
-  font-family: 'Hanalei Fill', cursive;
-}
-
 @font-face {
-  font-family: "futuraOblique";
-  src: local("futuraOblique"),
-    url("./assets//fonts/SpecialGothicExpandedOne-Regular.ttf") format("trueType");
+  font-family: "specialGothic";
+  src: local("specialGothic"),
+    url("./assets/fonts/SpecialGothicExpandedOne-Regular.ttf") format("trueType");
   font-weight: bold;
 }
 
-.font-custom {
-  font-family: "futuraOblique";
+.font-gothic {
+  font-family: "specialGothic";
+}
+
+@font-face {
+  font-family: "cinzelDecorativeRegular";
+  src: local("cinzelDecorativeRegular"),
+    url("./assets//fonts/CinzelDecorative-Regular.ttf") format("trueType");
+  font-weight: bold;
+}
+
+.font-cinzel {
+  font-family: "cinzelDecorativeRegular";
+}
+
+@font-face {
+  font-family: "cinzelDecorativeBold";
+  src: local("cinzelDecorativeBold"),
+    url("./assets//fonts/CinzelDecorative-Bold.ttf") format("trueType");
+  font-weight: bold;
+}
+
+.font-cinzel-bold {
+  font-family: "cinzelDecorativeBold";
 }
 
 .customGlass {
-  @apply rounded-full backdrop-blur-3xl border border-stone-200/15 bg-stone-400/30 shadow-sm
+  @apply rounded-field backdrop-blur-3xl border border-stone-200/15 bg-stone-500/20 shadow-xs text-base-100 shadow-xl
 }
 
 .customDarkGlass {
-  @apply rounded-full backdrop-blur-3xl border border-stone-100/10 bg-stone-300/20
+  @apply rounded-field backdrop-blur-3xl border border-stone-100/10 bg-stone-300/20
 }
 
 .customButton {
@@ -58,10 +75,53 @@
   transition: all 0.2s ease-in-out;
 }
 
+.customButtonActive {
+  @apply border border-stone-200/15 bg-stone-950/30 rounded-field px-3 py-2 pt-2 cursor-pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.customButton {
+  @apply border border-stone-200/0 rounded-field px-3 py-2 pt-2 select-none cursor-pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.customButtonGlass {
+  @apply rounded-field backdrop-blur-3xl border border-stone-200/15 bg-stone-500/20 shadow-xs text-base-100 shadow-xl;
+  transition: all 0.2s ease-in-out;
+}
+
+.customButtonGlass:hover {
+  @apply rounded-field backdrop-blur-3xl border border-stone-400/15 bg-stone-500/20 shadow-xs text-base-100 shadow-xl;
+  transition: all 0.2s ease-in-out;
+}
+
 .textGradient {
   background: linear-gradient(120deg, rgba(255, 255, 255, 1) 50%, rgb(117, 107, 107) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.textAnimatedGradient {
+  background: linear-gradient(to right,
+      #adadad 20%,
+      #ffffff 30%,
+      #ffffff 70%,
+      #adadad 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
 }
 
 .gradientFade {
@@ -71,4 +131,3 @@
 .gradientFadeReverse {
   background: linear-gradient(0deg, rgba(29, 29, 29, 1) 0%, rgba(29, 29, 29, 0) 100%);
 }
-

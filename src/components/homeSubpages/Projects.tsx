@@ -7,7 +7,7 @@ export default function Projects() {
 
     return (
         <>
-            <div className="glass m-3 p-3 rounded-box mb-20">
+            <div className="customGlass m-3 p-3 mb-20">
                 <div className='flex flex-wrap'>
                     {divider("Full-Stack Web Projects")}
                     <Card title="Business Operations and Finances Web App" description="Human resources management system"/>
