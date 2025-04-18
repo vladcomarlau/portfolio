@@ -45,7 +45,7 @@ export default function Home() {
           className='w-2/3 mb-8 rounded-pill mx-auto p-3 shadow-xl backdrop-blur-sm
           font-extralight border border-stone-500/15'
           style={{backgroundColor:"rgb(69,10,223)",
-            marginTop: "-30px"
+            marginTop: "-18px"
           }}>
           <div className='font-gothic text-base-100'>
             About me
