@@ -9,9 +9,9 @@ const Title = () => {
         transition={{ type: "spring", duration: 1 }}
         style={{marginTop:"-40px"}}>
         <div
-          className="font-gothic italic text-6xl md:text-8xl p-3 font-extrabold 
+          className="font-gothic italic md:text-8xl sm:text-6xl text-5xl p-3 font-extrabold 
           rounded-box rounded-b-none text-shadow-md text-base-100
-          md:mx-20 mx-5 mt-10">
+          md:mx-15 sm:mx-10 mx-5 mt-10">
           Vlad-Constantin
           <div>
             Comarlau

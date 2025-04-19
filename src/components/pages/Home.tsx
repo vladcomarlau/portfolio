@@ -28,7 +28,7 @@ export default function Home() {
       {background}
       <div className='gradientFade h-30'/>
       <div style={{zIndex:"100"}}>
-        <div className='mx-20 text-right'
+        <div className='sm:mx-20 mx-10 text-right'
         style={{marginTop: "-60px"}}>
           <ContactBadges />
         </div>
@@ -45,7 +45,7 @@ export default function Home() {
           className='w-2/3 mb-8 rounded-pill mx-auto p-3 shadow-xl backdrop-blur-sm
           font-extralight border border-stone-500/15'
           style={{backgroundColor:"rgb(69,10,223)",
-            marginTop: "-25px"
+            marginTop: "-15px"
           }}>
           <div className='font-gothic text-base-100'>
             About me
@@ -69,15 +69,16 @@ export default function Home() {
             marginBottom: "-11px"
           }}>
           <a className={homeSubPage === 0 ? 
-            "text-base-100 text-md customButton font-extralight" :
-            "text-base-100 text-md customButtonActive font-extralight"}
+            "text-md customButton font-extralight" :
+            "text-md customButtonActive font-extralight"}
             onClick={() => setHomeSubPage(1)}>
             Projects
           </a>
           <a className={homeSubPage === 1 ?
-            "text-base-100 text-md customButton font-extralight" :
-            "text-base-100 text-md customButtonActive font-extralight"}
-            onClick={() => setHomeSubPage(0)}>
+            "text-md customButton font-extralight" :
+            "text-md customButtonActive font-extralight"}
+            onClick={() => setHomeSubPage(0)}
+            style={{marginLeft:"4px"}}>
             CV
           </a>
         </motion.div>
