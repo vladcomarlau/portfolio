@@ -31,6 +31,9 @@ const Title = () => {
     <>
       <div className="perspective-distant" ref={targetRef}>
         <motion.div
+          initial={{x:-400, opacity: 0 }}
+          animate={{x:0, opacity: 1 }}
+          transition={{ type: "spring", delay:0.3, duration: 2 }}
           style={{ rotateX: rotateX, translateY: translateY }}
           className="h-screen backface-hidden origin-bottom">
           <div className="bg2 h-screen">
@@ -38,7 +41,9 @@ const Title = () => {
               className="font-gothic italic md:text-8xl sm:text-6xl text-5xl p-3 font-extrabold 
               rounded-b-none text-shadow-md text-stone-100 pt-30 sm:px-10
               ">
-              Vlad-Constantin
+              <div>
+                Vlad-Constantin
+              </div>
               <div>
                 Comarlau
               </div>
