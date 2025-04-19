@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import Title from '../Title'
-import Projects from '../homeSubpages/Projects'
-import CV from '../homeSubpages/CV'
+import Projects from './Projects'
+import CV from './CV'
 import Footer from '../Footer'
 import ContactBadges from '../ContactBadges'
 import { motion, AnimatePresence, useScroll, useTransform } from "motion/react"
@@ -40,11 +40,10 @@ export default function Home() {
       {background}
       <div style={{zIndex:"100"}}>
         <div className='gradientFade h-40 -mb-40'>
-          
-        </div>
-        <div className='sm:mx-20 mx-10 text-right absolute right-0'
-          style={{marginTop: "60px", marginBottom:"-60px", zIndex:"300"}}>
-          <ContactBadges />
+          <div className='sm:mx-20 mx-10 text-right absolute right-0'
+            style={{ marginTop: "60px", marginBottom: "-60px", zIndex: "300" }}>
+            <ContactBadges />
+          </div>
         </div>
 
         <motion.div
@@ -54,6 +53,7 @@ export default function Home() {
           <Title />
         </motion.div>
         
+        
         <div className='fixed w-full mt-5'
           style={{ top: "0", zIndex: "300" }}>
           <AnimatePresence>
@@ -61,10 +61,10 @@ export default function Home() {
           </AnimatePresence>
         </div>
 
-        <motion.div className='md:mx-45 mx-20 customGlass'
-          initial={{ scale: 0.1, opacity: 0 }}
-          animate={{ scale: 1.0, opacity: 1 }}
-          transition={{ delay: 2.3, duration: 0.5, type: "spring" }}
+        <motion.div className='md:mx-35 mx-10 mt-10 customGlass'
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1.0, opacity: 1 }}
+          transition={{ type: "spring", duration: 0.8 }}
           style={{
             padding: "8px 0px 7px 1px", width: "135px",
             marginBottom: "-11px",
@@ -95,7 +95,7 @@ export default function Home() {
         </motion.div>
         
         <motion.div 
-          className='md:mx-20'>
+          className='md:mx-20 mt-5'>
           {homeSubPage == 0 && <CV/>}
           {homeSubPage == 1 && <Projects/>}
         </motion.div>

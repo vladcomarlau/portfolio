@@ -12,34 +12,27 @@ const Title = () => {
 
   const rotateX = useTransform(
     scrollYProgress, 
-    [0.5, 1], 
-    [0, 120]
+    [0.5, 0.8, 1], 
+    [0, 80, 110]
   );
-
-  const translateY = useSpring(
-    useTransform(
-      scrollYProgress,
-      [0.5, 0.8, 1],
-      [0, 30, -200]
-    ), {
-    stiffness: 200,
-    damping: 30,
-    restDelta: 0.001
-  })
   
   return (
     <>
-      <div className="perspective-distant" ref={targetRef}>
+      <motion.div 
+        initial={{ backgroundColor: "rgba(245,245,244,1)" }}
+        animate={{ backgroundColor: "rgba(255,255,255,0)" }}
+        transition={{delay:1.7, time:0.2}}
+        className="perspective-distant bg-stone-100" ref={targetRef}>
         <motion.div
           initial={{x:-400, opacity: 0 }}
           animate={{x:0, opacity: 1 }}
           transition={{ type: "spring", delay:0.3, duration: 2 }}
-          style={{ rotateX: rotateX, translateY: translateY }}
+          style={{ rotateX: rotateX }}
           className="h-screen backface-hidden origin-bottom">
-          <div className="bg2 h-screen">
+          <div className=" text-stone-950 bg-stone-100  h-screen">
             <div
               className="font-gothic italic md:text-8xl sm:text-6xl text-5xl p-3 font-extrabold 
-              rounded-b-none text-shadow-md text-stone-100 pt-30 sm:px-10
+              rounded-b-none text-shadow-md pt-30 sm:px-10
               ">
               <div>
                 Vlad-Constantin
@@ -61,14 +54,14 @@ const Title = () => {
               </div>
               <p className='indent-5 text-base-100/90 font-serif'>
                 <Typewriter text="Focused on full-stack web development using Java, Spring Boot, React, REST APIs and
-              relational databases. Dual wielding bachelor's degree: one of computer science from
-              the Faculty of Cybernetics, Statistics, Economic Informatics, the other of management (ASE). Enthusiastic about problem-solving and continuous learning."/>
+              relational databases. Dual wielding bachelor's degree: one in computer science from
+              the Faculty of Cybernetics, Statistics, Economic Informatics, the other one in management (ASE). Enthusiastic about problem-solving and continuous learning."/>
               </p>
             </div>
           </div>
           
         </motion.div>
-      </div>
+      </motion.div>
     </>
   )
 }
