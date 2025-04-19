@@ -1,12 +1,11 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Title from '../Title'
 import Projects from '../homeSubpages/Projects'
 import CV from '../homeSubpages/CV'
 import Footer from '../Footer'
 import ContactBadges from '../ContactBadges'
-import { motion, AnimatePresence } from "motion/react"
+import { motion, AnimatePresence, useScroll, useTransform } from "motion/react"
 import MenuBar from '../MenuBar'
-import { Typewriter } from '../Typewriter'
 
 export default function Home() {
   const [homeSubPage, setHomeSubPage] = useState(1);
@@ -23,16 +22,37 @@ export default function Home() {
       }}/>
   )
 
+  const targetRef = useRef(null)
+
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start end", "end start"],
+  });
+
+  const arrowOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.5],
+    [1, 0]
+  );
+
   return (
     <>
       {background}
-      <div className='gradientFade h-30'/>
       <div style={{zIndex:"100"}}>
-        <div className='sm:mx-20 mx-10 text-right'
-        style={{marginTop: "-60px"}}>
+        <div className='gradientFade h-40 -mb-40'>
+          
+        </div>
+        <div className='sm:mx-20 mx-10 text-right absolute right-0'
+          style={{marginTop: "60px", marginBottom:"-60px", zIndex:"300"}}>
           <ContactBadges />
         </div>
-        <Title />
+
+        <motion.div
+          onViewportEnter={() => setIsTitleVisible(true)}
+          onViewportLeave={() => setIsTitleVisible(false)}
+          style={{zIndex:'10'}}>
+          <Title />
+        </motion.div>
         
         <div className='fixed w-full mt-5'
           style={{ top: "0", zIndex: "300" }}>
@@ -41,32 +61,14 @@ export default function Home() {
           </AnimatePresence>
         </div>
 
-        <motion.div 
-          className='w-2/3 mb-8 rounded-pill mx-auto p-3 shadow-xl backdrop-blur-sm
-          font-extralight border border-stone-500/15'
-          style={{backgroundColor:"rgb(69,10,223)",
-            marginTop: "-15px"
-          }}>
-          <div className='font-gothic text-base-100'>
-            About me
-          </div>
-          <p className='indent-5 text-base-100/90'>
-            <Typewriter text="Focused on full-stack web development using Java, Spring Boot, React, REST APIs and
-            relational databases. Dual wielding bachelor's degree: one of computer science from
-            the Faculty of Cybernetics, Statistics, Economic Informatics, the other of management (ASE). Enthusiastic about problem-solving and continuous learning."/>
-          </p>
-        </motion.div>
-
         <motion.div className='md:mx-45 mx-20 customGlass'
           initial={{ scale: 0.1, opacity: 0 }}
           animate={{ scale: 1.0, opacity: 1 }}
           transition={{ delay: 2.3, duration: 0.5, type: "spring" }}
-          onViewportEnter={() => setIsTitleVisible(true)}
-          onViewportLeave={() => setIsTitleVisible(false)}
           style={{
-            padding: "7px 0px 7px 1px", width: "135px",
-            borderRadius: "20px 20px 0px 0px",
-            marginBottom: "-11px"
+            padding: "8px 0px 7px 1px", width: "135px",
+            marginBottom: "-11px",
+            
           }}>
           <a className={homeSubPage === 0 ? 
             "text-md customButton font-extralight" :
@@ -82,11 +84,17 @@ export default function Home() {
             CV
           </a>
         </motion.div>
+
+        <motion.div style={{opacity: arrowOpacity}}
+          ref={targetRef} className="text-center w-full absolute bottom-0 left-1/2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+            className="size-10"
+            style={{ marginLeft: "-20px"}}>
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </motion.div>
         
         <motion.div 
-          initial={{ scale: 0.8, marginTop: "150px", opacity: 0}}
-          animate={{ scale: 1.0, marginTop: "0px", opacity: 1}}
-          transition={{delay: 1.5, duration: 1, type:"spring"}}
           className='md:mx-20'>
           {homeSubPage == 0 && <CV/>}
           {homeSubPage == 1 && <Projects/>}
