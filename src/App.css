@@ -187,3 +187,17 @@
   box-shadow: 20px 20px 60px #bebebe,
     -20px -20px 60px #ffffff;
 }
+
+.btn-custom-a {
+  @apply p-2 mx-1 btn backdrop-blur-xl font-bold h-8 shadow-none border-1 border-stone-100;
+  background-color: rgb(69, 10, 223);
+  color: rgb(128, 251, 210);
+  border-color: rgb(128, 251, 210);
+}
+
+.btn-custom-b {
+  @apply p-2 mx-1 btn backdrop-blur-xl font-bold h-8 shadow-none border-1 border-stone-100;
+  background-color: rgb(235, 79, 39);
+  color: rgb(128, 251, 210);
+  border-color: rgb(128, 251, 210);
+}

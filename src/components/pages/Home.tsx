@@ -38,19 +38,19 @@ export default function Home() {
     <>
       {background}
       <div style={{zIndex:"100"}}>
-        <div className='gradientFade h-40 -mb-40'>
+        <motion.div className='gradientFade h-40 -mb-40'
+          onViewportEnter={() => setIsTitleVisible(true)}
+          onViewportLeave={() => setIsTitleVisible(false)}>
           <div className='sm:mx-20 mx-10 text-right absolute right-0'
             style={{ marginTop: "60px", marginBottom: "-60px", zIndex: "300" }}>
             <ContactBadges />
           </div>
-        </div>
+        </motion.div>
 
-        <motion.div
-          onViewportEnter={() => setIsTitleVisible(true)}
-          onViewportLeave={() => setIsTitleVisible(false)}
+        <div
           style={{zIndex:'10'}}>
           <Title />
-        </motion.div>
+        </div>
         
         <div className='fixed w-full mt-5'
           style={{ top: "0", zIndex: "300" }}>
@@ -68,32 +68,6 @@ export default function Home() {
           </svg>
         </motion.div>
 
-        <motion.div className='md:mx-35 mx-10 mt-35 customGlass'
-          initial={{ scale: 0, opacity: 0 }}
-          whileInView={{ scale: 1.0, opacity: 1 }}
-          transition={{ type: "spring", duration: 0.8 }}
-          style={{
-            padding: "8px 0px 7px 1px", width: "135px",
-            marginBottom: "0px",
-            
-          }}>
-          <a className={homeSubPage === 0 ? 
-            "text-md customButton font-extralight" :
-            "text-md customButtonActive font-extralight"}
-            onClick={() => setHomeSubPage(1)}>
-            Projects
-          </a>
-          <a className={homeSubPage === 1 ?
-            "text-md customButton font-extralight" :
-            "text-md customButtonActive font-extralight"}
-            onClick={() => setHomeSubPage(0)}
-            style={{marginLeft:"4px"}}>
-            CV
-          </a>
-        </motion.div>
-
-        
-        
         <motion.div 
           className='md:mx-20'>
           {homeSubPage == 0 && <CV/>}
