@@ -3,7 +3,8 @@ export default function CV() {
     return (
         <>
             <div className="customGlass m-3 p-3 mt-13 rounded-box text-left">
-                <div className='text-stone-100 font-bold font-gothic p-2 italic text-2xl'>: CV / RESUME</div>
+                <div className='text-stone-100 font-bold font-gothic p-2 italic text-2xl'>
+                    / CV / RESUME</div>
                 <div className="m-4 inline-flex font-extralight font-serif">
                     PDF download:
                 </div>

@@ -11,6 +11,11 @@ export default function Home() {
   const [homeSubPage, setHomeSubPage] = useState(1);
   const [isTitleVisible, setIsTitleVisible] = useState(false);
 
+  const handlePageChange = (x:number) => {
+    setHomeSubPage(x);
+    window.scrollTo(0, 830);
+  }
+
   const background = (
     <div className='background w-full' 
       style={{  
@@ -55,7 +60,7 @@ export default function Home() {
         <div className='fixed w-full mt-5'
           style={{ top: "0", zIndex: "300" }}>
           <AnimatePresence>
-            {!isTitleVisible && <MenuBar setHomeSubPage={setHomeSubPage} homeSubPage={homeSubPage}/>}
+            {!isTitleVisible && <MenuBar setHomeSubPage={handlePageChange} homeSubPage={homeSubPage}/>}
           </AnimatePresence>
         </div>
 
@@ -69,7 +74,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div 
-          className='md:mx-20'>
+          className='md:mx-20 mt-30'>
           {homeSubPage == 0 && <CV/>}
           {homeSubPage == 1 && <Projects/>}
         </motion.div>

@@ -201,3 +201,21 @@
   color: rgb(128, 251, 210);
   border-color: rgb(128, 251, 210);
 }
+
+.blurGradient::before {
+ backdrop-filter: blur(0.5px);
+  mask: linear-gradient(to top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 0.5%,
+        rgba(0, 0, 0, 0) 0.5%,
+        rgba(0, 0, 0, 1) 37.5%);
+}
+
+.blurGradient::after {
+  backdrop-filter: blur(64px);
+  mask: linear-gradient(to top,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 0.5%,
+        rgba(0, 0, 0, 0) 0.5%,
+        rgba(0, 0, 0, 1) 37.5%);
+}

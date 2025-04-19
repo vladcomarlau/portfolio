@@ -3,10 +3,10 @@ import { useRef } from "react";
 
 export default function RotateScrollL(props:any) {
 
-    const titleCardRef = useRef(null)
+    const ref = useRef(null)
 
     const { scrollYProgress } = useScroll({
-        target: titleCardRef,
+        target: ref,
         offset: ["start end", "end start"],
     });
 
@@ -23,7 +23,7 @@ export default function RotateScrollL(props:any) {
     
     return (
         <>
-            <motion.div ref={titleCardRef} className="rounded-box p-4 mb-20"
+            <motion.div ref={ref} className="rounded-box p-4 mb-20"
                 style={{ rotateZ: rotateZ }}>
                 {props.children}
             </motion.div>

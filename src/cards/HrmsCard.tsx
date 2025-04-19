@@ -24,16 +24,16 @@ export default function HrmsCard() {
                 </div>
 
                 <div className="p-1 saturate-0">
-                    <TechBadge name="java" className="" />
-                    <TechBadge name="spring" className="" />
-                    <TechBadge name="react" className="" />
-                    <TechBadge name="js" className="" />
-                    <TechBadge name="maven" className="" />
-                    <TechBadge name="jwt" className="" />
-                    <TechBadge name="npm" className="" />
-                    <TechBadge name="openai" className="" />
-                    <TechBadge name="bootstrap" className="" />
-                    <TechBadge name="intellij" className="" />
+                    <TechBadge name="java" />
+                    <TechBadge name="spring" />
+                    <TechBadge name="react" />
+                    <TechBadge name="js" />
+                    <TechBadge name="maven" />
+                    <TechBadge name="jwt" />
+                    <TechBadge name="npm" />
+                    <TechBadge name="openai" />
+                    <TechBadge name="bootstrap" />
+                    <TechBadge name="intellij" />
                 </div>
             </div>
         </>
