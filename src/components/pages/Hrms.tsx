@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import TechBadge from "../TechBadge";
 
 export default function() {
     return (
@@ -16,10 +17,17 @@ export default function() {
                         Web app developed for employee, organizational, payroll, leaves and performance evaluation management for use on intranet across entire organization.
                     </p>
                 </div>
-                <div className="">
-                    <div className="text-custom-primary font-serif px-2 rounded-field">
-                        Technologies used: 
-                    </div>
+                <div className=" p-1">
+                    <TechBadge name="java" className=""/>
+                    <TechBadge name="spring" className=""/>
+                    <TechBadge name="react" className=""/>
+                    <TechBadge name="js" className=""/>
+                    <TechBadge name="maven" className=""/>
+                    <TechBadge name="jwt" className=""/>
+                    <TechBadge name="intellij" className=""/>
+                    <TechBadge name="npm" className=""/>
+                    <TechBadge name="openai" className=""/>
+                    <TechBadge name="bootstrap" className=""/>
                 </div>
             </motion.div>
         </>

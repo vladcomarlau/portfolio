@@ -29,7 +29,7 @@ const Title = () => {
           transition={{ type: "spring", delay:0.3, duration: 2 }}
           style={{ rotateX: rotateX }}
           className="h-screen backface-hidden origin-bottom">
-          <div className=" text-stone-950 bg-stone-100  h-screen">
+          <div className=" text-stone-950 bg-stone-100 pt-5 h-screen">
             <div
               className="font-gothic italic md:text-8xl sm:text-6xl text-5xl p-3 font-extrabold 
               rounded-b-none text-shadow-md pt-30 sm:px-10
@@ -55,7 +55,7 @@ const Title = () => {
               <p className='indent-5 text-base-100/90 font-serif'>
                 <Typewriter text="Focused on full-stack web development using Java, Spring Boot, React, REST APIs and
               relational databases. Dual wielding bachelor's degree: one in computer science from
-              the Faculty of Cybernetics, Statistics, Economic Informatics, the other one in management (ASE). Enthusiastic about problem-solving and continuous learning."/>
+              the Faculty of Cybernetics, Statistics and Economic Informatics, the other one in management (ASE). Enthusiastic about problem-solving and continuous learning."/>
               </p>
             </div>
           </div>

@@ -12,9 +12,8 @@ export default function Home() {
   const [isTitleVisible, setIsTitleVisible] = useState(false);
 
   const background = (
-    <div className='background' 
-      style={{ 
-        width: "100vw", 
+    <div className='background w-full' 
+      style={{  
         height: "100vh",
         zIndex: "-100",
         position:"fixed",
@@ -53,7 +52,6 @@ export default function Home() {
           <Title />
         </motion.div>
         
-        
         <div className='fixed w-full mt-5'
           style={{ top: "0", zIndex: "300" }}>
           <AnimatePresence>
@@ -86,8 +84,8 @@ export default function Home() {
         </motion.div>
 
         <motion.div style={{opacity: arrowOpacity}}
-          ref={targetRef} className="text-center w-full absolute bottom-0 left-1/2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+          ref={targetRef} className="text-center w-1/2 absolute bottom-0 left-1/2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black"
             className="size-10"
             style={{ marginLeft: "-20px"}}>
             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
