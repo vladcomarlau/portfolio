@@ -163,6 +163,14 @@
   background-color: rgb(69, 10, 223);
 }
 
+.text-custom-tertiary {
+  color: rgb(235,79,39);
+}
+
+.bg-custom-tertiary {
+  background-color: rgb(235,79,39);
+}
+
 @keyframes pulse {
   50% {
     opacity: 0;
@@ -171,4 +179,11 @@
 
 .pulse {
   animation: pulse 2s infinite
+}
+
+.neumorphism {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
 }

@@ -3,7 +3,7 @@ import Title from '../Title'
 import Projects from './Projects'
 import CV from './CV'
 import Footer from '../Footer'
-import ContactBadges from '../ContactBadges'
+import ContactBadges from '../../buttons/ContactBadges'
 import { motion, AnimatePresence, useScroll, useTransform } from "motion/react"
 import MenuBar from '../MenuBar'
 
@@ -59,13 +59,22 @@ export default function Home() {
           </AnimatePresence>
         </div>
 
-        <motion.div className='md:mx-35 mx-10 mt-10 customGlass'
+        <motion.div style={{ opacity: arrowOpacity }}
+          ref={targetRef} className="text-center w-1/2 absolute bottom-0 left-1/2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black"
+            className="size-10"
+            style={{ marginLeft: "-20px" }}>
+            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+          </svg>
+        </motion.div>
+
+        <motion.div className='md:mx-35 mx-10 mt-35 customGlass'
           initial={{ scale: 0, opacity: 0 }}
           whileInView={{ scale: 1.0, opacity: 1 }}
           transition={{ type: "spring", duration: 0.8 }}
           style={{
             padding: "8px 0px 7px 1px", width: "135px",
-            marginBottom: "-11px",
+            marginBottom: "0px",
             
           }}>
           <a className={homeSubPage === 0 ? 
@@ -83,17 +92,10 @@ export default function Home() {
           </a>
         </motion.div>
 
-        <motion.div style={{opacity: arrowOpacity}}
-          ref={targetRef} className="text-center w-1/2 absolute bottom-0 left-1/2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black"
-            className="size-10"
-            style={{ marginLeft: "-20px"}}>
-            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-          </svg>
-        </motion.div>
+        
         
         <motion.div 
-          className='md:mx-20 mt-5'>
+          className='md:mx-20'>
           {homeSubPage == 0 && <CV/>}
           {homeSubPage == 1 && <Projects/>}
         </motion.div>

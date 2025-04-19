@@ -32,7 +32,7 @@ export default function ContactBadges() {
                     initial={{ scale: 0.2, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{type:"spring", delay: 0.8, duration: 0.4}}>
-                    <span className="badge badge-xl m-1 shadow-lg rounded-full customDarkGlass text-sm">
+                    <span className="badge badge-xl mr-1 my-2 shadow-lg rounded-full customDarkGlass text-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(51,112,216)" className="size-5">
                             <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
                             <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
