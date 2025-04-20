@@ -16,11 +16,6 @@ export default function RotateScrollL(props:any) {
         [15, -7]
     );
 
-    const moveX = useTransform<number, number>(
-        scrollYProgress as MotionValue<number>,
-        (latest) => Math.sin(latest*3) * 50 -40
-    );
-    
     return (
         <>
             <motion.div ref={ref} className="rounded-box p-4 mb-20"
