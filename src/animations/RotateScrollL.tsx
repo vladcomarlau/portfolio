@@ -13,7 +13,7 @@ export default function RotateScrollL(props:any) {
     const rotateZ = useTransform(
         scrollYProgress,
         [0, 1],
-        [15, -7]
+        [7, -7]
     );
 
     const rotateX = useTransform(

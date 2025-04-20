@@ -1,5 +1,4 @@
-import { motion } from "motion/react";
-import Carousel from "./Carousel";
+import CarouselFade from "./CarouselFade";
 import PresenceDiv from "../animations/PresenceDiv";
 
 export default function CarouselHrms(props:any) {
@@ -9,15 +8,15 @@ export default function CarouselHrms(props:any) {
             <div className='text-stone-100 font-bold font-gothic px-2 italic text-xs'>
                 / PROJECTS / FULL STACK - WEB APPLICATIONS
             </div>
-            <div className="py-1 mx-2">
-                <span className="font-gothic bg-custom-primary px-2 text-custom-secondary">
+            <div className="pb-1 mx-2">
+                <span className="font-gothic bg-custom-primary px-2 text-custom-secondary text-xs">
                     HUMAN RESOURCES MANAGEMENT SYSTEM
                 </span>
             </div>
-            <Carousel scrollYProgress={props.scrollYProgress}>
+            <CarouselFade scrollYProgress={props.scrollYProgress}>
                 <PresenceDiv key="organisationText">
                     <img className="rounded-box absolute h-full w-auto block" src="hrmsScreenshots/1.jpeg"/>
-                    <div className="rounded-box relative h-[75vh] backdrop-blur-xl pt-8 font-serif px-5 overflow-scroll">
+                    <div className="rounded-box relative h-[75vh] backdrop-blur-xl pt-8 font-light px-5 overflow-scroll">
                         <div className="px-3 py-1 text-left text-stone-950">
                             <div className="font-gothic my-3 text-center text-xl">Organigram</div>
                             <p className="my-3 indent-5 text-center">
@@ -40,7 +39,7 @@ export default function CarouselHrms(props:any) {
 
                 <PresenceDiv key="salaryText">
                     <img className="rounded-box absolute h-full w-auto" src="hrmsScreenshots/1.jpeg"/>
-                    <div className="text-center rounded-box relative h-[75vh] backdrop-blur-xl pt-8 font-serif px-5 text-stone-950 overflow-scroll">
+                    <div className="text-center rounded-box relative h-[75vh] backdrop-blur-xl pt-8 font-light px-5 text-stone-950 overflow-scroll">
                         <div className="px-3 py-1 text-left">
                             <div className="my-3 text-center text-xl font-gothic">Salary</div>
                             <ul className="">
@@ -62,7 +61,7 @@ export default function CarouselHrms(props:any) {
 
                 <PresenceDiv key="leavesText">
                     <img className="rounded-box absolute h-full w-auto" src="hrmsScreenshots/3.jpeg"/>
-                    <div className="text-center rounded-box relative h-[75vh] backdrop-blur-xl pt-8 font-serif px-5 text-stone-950 overflow-scroll">
+                    <div className="text-center rounded-box relative h-[75vh] backdrop-blur-xl pt-8 font-light px-5 text-stone-950 overflow-scroll">
                         <div className="px-3 py-1 text-left">
                             <div className="my-3 text-center text-xl font-gothic">Leaves</div>
                             <ul className="">
@@ -88,7 +87,7 @@ export default function CarouselHrms(props:any) {
 
                 <PresenceDiv key="accountsManagerText">
                     <img className="rounded-box absolute h-full w-auto" src="hrmsScreenshots/4.jpeg"/>
-                    <div className="text-center rounded-box relative h-[75vh] backdrop-blur-xl pt-8 font-serif px-5 text-stone-950 overflow-scroll">
+                    <div className="text-center rounded-box relative h-[75vh] backdrop-blur-xl pt-8 font-light px-5 text-stone-950 overflow-scroll">
                         <div className="px-3 py-1 text-left">
                             <div className="my-3 text-center text-xl font-gothic">Accounts Manager</div>
                             <ul className="">
@@ -117,7 +116,7 @@ export default function CarouselHrms(props:any) {
 
                 <PresenceDiv key="performanceEvaluationText">
                     <img className="rounded-box absolute h-full w-auto" src="hrmsScreenshots/5.jpeg"/>
-                    <div className="text-center rounded-box relative h-[75vh] backdrop-blur-xl pt-8 font-serif px-5 text-stone-950 overflow-scroll">
+                    <div className="text-center rounded-box relative h-[75vh] backdrop-blur-xl pt-8 font-light px-5 text-stone-950 overflow-scroll">
                         <div className="px-3 py-1 text-left">
                             <div className="my-3 text-center text-xl font-gothic">Performance Evaluation</div>
                             <ul className="">
@@ -137,7 +136,7 @@ export default function CarouselHrms(props:any) {
                         <img className="w-full rounded-box " src="hrmsScreenshots/5.jpeg" />
                     </div>
                 </PresenceDiv>
-            </Carousel>
+            </CarouselFade>
         </div>
     )
 }

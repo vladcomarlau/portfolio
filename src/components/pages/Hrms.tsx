@@ -18,14 +18,17 @@ export default function Hrms() {
   
     return (
         <>
-            <RotateScrollL className="my-20">
+            <RotateScrollL className="mb-60 mt-50">
                 <HrmsCard/>
             </RotateScrollL>
 
-            <motion.div ref={targetRef} className="h-600 mb-100">
-                <div className="sticky top-17 my-20">
+            <motion.div ref={targetRef} className="h-600">
+                <motion.div className="sticky top-20 my-20"
+                initial={{ scale: 0.2, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ type: "spring", duration: 1}}>
                     <CarouselHrms scrollYProgress={scrollYProgress}/>
-                </div>
+                </motion.div>
             </motion.div>
         </>
     )

@@ -1,4 +1,6 @@
 import Hrms from "./Hrms";
+import RideSharing from "./RideSharing";
+import TVStreamer from "./TVStreamer";
 
 export default function Projects() {
 
@@ -9,6 +11,13 @@ export default function Projects() {
                 <div className='text-stone-100 font-bold font-gothic px-2 italic'>/ FULL STACK - WEB APPLICATIONS </div>
                 <div className='px-3 text-stone-100 font-extralight'>
                     <Hrms/>
+                    <TVStreamer/>
+                </div>
+
+                <div className='text-stone-100 font-bold font-gothic px-2 italic text-2xl'>/ PROJECTS </div>
+                <div className='text-stone-100 font-bold font-gothic px-2 italic'>/ OTHER </div>
+                <div className='px-3 text-stone-100 font-extralight'>
+                    <RideSharing/>
                 </div>
                 
             </div>

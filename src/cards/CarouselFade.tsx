@@ -1,7 +1,7 @@
 import { AnimatePresence, motion, useTransform } from "motion/react";
 import { Children, useEffect, useState } from "react";
 
-export default function Carousel(props:any) {
+export default function CarouselFade(props:any) {
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -9,7 +9,7 @@ export default function Carousel(props:any) {
     
     const slideNo = useTransform(
         props.scrollYProgress,
-        [0, 0.18, 0.7, 1],
+        [0, 0.18, 0.8, 1],
         [0, 0, childrenNo, childrenNo]
     );
 

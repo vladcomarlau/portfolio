@@ -47,7 +47,7 @@ export default function Home() {
           onViewportEnter={() => setIsTitleVisible(true)}
           onViewportLeave={() => setIsTitleVisible(false)}>
           <div className='sm:mx-20 mx-10 text-right absolute right-0'
-            style={{ marginTop: "60px", marginBottom: "-60px", zIndex: "300" }}>
+            style={{ marginTop: "30px", marginBottom: "-60px", zIndex: "300" }}>
             <ContactBadges />
           </div>
         </motion.div>

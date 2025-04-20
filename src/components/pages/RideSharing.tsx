@@ -19,7 +19,7 @@ export default function RideSharing() {
     return (
         <>              
             <RotateScrollR>
-
+                
             </RotateScrollR>
 
             <motion.div ref={targetRef} className="h-600 mb-100">
