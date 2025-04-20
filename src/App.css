@@ -59,11 +59,11 @@
 }
 
 .customGlass {
-  @apply rounded-field backdrop-blur-3xl border border-stone-200/15 bg-stone-500/20 shadow-xs text-base-100 shadow-xl
+  @apply backdrop-blur-3xl border border-stone-200/15 bg-stone-500/20 shadow-xs text-base-100 shadow-xl
 }
 
 .customDarkGlass {
-  @apply rounded-field backdrop-blur-3xl border border-stone-100/10 bg-stone-500/20
+  @apply backdrop-blur-3xl border border-stone-100/10 bg-stone-500/20
 }
 
 .customButton {

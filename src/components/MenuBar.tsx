@@ -8,7 +8,7 @@ export default function MenuBar(props:any) {
             exit={{ y: -100, scale: 0.2 }}
             transition={{ type: "spring", duration: 1 }}
             className="blurGradient">
-            <div className="customGlass md:mx-45 mx-5 py-1 text-shadow-md"
+            <div className="customGlass md:mx-45 mx-5 py-1 text-shadow-md rounded-full"
                 style={{padding:"7px 0px 5px 0px", 
                 border:"1px solid rgba(255,255,255,0.2)",
                 height:"39px"}}>

@@ -16,17 +16,18 @@ export default function RotateScrollL(props:any) {
         [-15, 7]
     );
 
-    const moveX = useTransform<number, number>(
-        scrollYProgress as MotionValue<number>,
-        (latest) => Math.sin(latest*3) * -50 +40
+    const rotateX = useTransform(
+        scrollYProgress,
+        [0, 1],
+        [10, -14]
     );
     
     return (
-        <>
+        <div className={"perspective-dramatic " + (props.className ?? "")}>
             <motion.div ref={ref} className="rounded-box p-4 mb-20"
-                style={{ rotateZ: rotateZ }}>
+                style={{ rotateZ: rotateZ, rotateX: rotateX }}>
                 {props.children}
             </motion.div>
-        </>
+        </div>
     )
 }
