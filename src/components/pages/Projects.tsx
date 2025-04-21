@@ -11,7 +11,9 @@ export default function Projects() {
                 <div className='text-stone-100 font-bold font-gothic px-2 italic'>/ FULL STACK - WEB APPLICATIONS </div>
                 <div className='px-3 text-stone-100 font-extralight'>
                     <Hrms/>
-                    <TVStreamer/>
+                    <div className="mt-[50vw]">
+                        <TVStreamer />
+                    </div>
                 </div>
 
                 <div className='text-stone-100 font-bold font-gothic px-2 italic text-2xl mt-20'>/ PROJECTS </div>

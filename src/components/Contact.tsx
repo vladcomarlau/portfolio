@@ -39,7 +39,7 @@ export default function Contact () {
               rounded-b-none text-shadow-md pt-22 sm:px-10
               ">
               <div>
-                Let's work together!
+                Contact
               </div>
             </div>
 
@@ -48,13 +48,16 @@ export default function Contact () {
               style={{
                 backgroundColor: "rgb(69,10,223)",
               }}>
-              <div className='font-gothic text-base-100'>
-                Contact
-              </div>
+
               <p className='indent-5 text-base-100/90 font-serif'>
-                <a className="block underline"  href="mailto: vladcom95@gmail.com" >vladcom95@gmail.com</a>
-                <a className="block" href="" >0752 230 503</a>
-                <a className="block" href="" >linkedin.com/in/comarlauvlad/</a>
+                <div>Vlad-Constantin Comarlau</div>
+                <div>Bucharest, Romania</div>
+                <div className="my-3">
+                  <a className="block underline" href="tel:0752230503" >0752 230 503</a>
+                  <a className="block underline" href="mailto: vladcom95@gmail.com" >vladcom95@gmail.com</a>
+                  <a className="block underline" target="_" href="https://linkedin.com/in/comarlauvlad/" >linkedin.com/in/comarlauvlad/</a>
+                </div>
+                
               </p>
             </div>
           </div>

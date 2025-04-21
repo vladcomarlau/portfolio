@@ -9,11 +9,12 @@ export default function CarouselTVStreamer(props:any) {
                     LIVE TV WEB STREAMER
                 </span>
             </div>
-            <div>
+            <div className="w-screen absolute left-0 top-0 md:-ml-30 -ml-9">
                 <CarouselHorizontal scrollYProgress={props.scrollYProgress}>
-                    <img className="flex-shrink-0 w-full h-full object-contain mx-4 px-1 py-2 rounded-field" src="/tvStreamerScreenshots/1.png"/>
-                    <img className="flex-shrink-0 w-full h-full object-contain mx-4 px-1 py-2 rounded-field" src="/tvStreamerScreenshots/2.png"/>
-                    <img className="flex-shrink-0 w-full h-full object-contain mx-4 px-1 py-2 rounded-field" src="/tvStreamerScreenshots/3.png"/>
+                    <img className="w-200 h-100 object-contain mx-4 px-1 py-2 rounded-field" src="/tvStreamerScreenshots/1.png"/>
+                    <img className="w-200 h-100 object-contain mx-4 px-1 py-2 rounded-field" src="/tvStreamerScreenshots/4.png"/>
+                    <img className="w-200 h-100 object-contain mx-4 px-1 py-2 rounded-field" src="/tvStreamerScreenshots/2.png"/>
+                    <img className="w-200 h-100 object-contain mx-4 px-1 py-2 rounded-field" src="/tvStreamerScreenshots/3.png"/>
                 </CarouselHorizontal>
             </div>
         </div>

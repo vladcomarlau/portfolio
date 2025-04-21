@@ -20,7 +20,7 @@ export default function TVStreamerCard() {
                 </p>
             </div>
 
-            <SkillBadges skills={["Java", "Java Swing", "JavaScript", "Maven", "FFMPEG + HLS", "jSerialComm", "Java Simpler File Server", "ESP8266"]}/>
+            <SkillBadges skills={["Java", "Java Swing", "JavaScript", "Maven", "FFMPEG + HLS", "jSerialComm", "Java Simple File Server", "ESP8266"]}/>
         </div>
     )
 }

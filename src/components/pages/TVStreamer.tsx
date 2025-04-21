@@ -20,7 +20,7 @@ export default function TVStreamer
                 <TVStreamerCard/>
             </RotateScrollR>
 
-            <motion.div ref={targetRef} className="h-600">
+            <motion.div ref={targetRef} className="h-200">
                 <div className="sticky top-22">
                     <motion.div
                         initial={{ scale:0.2, opacity: 0 }}
@@ -32,10 +32,10 @@ export default function TVStreamer
             </motion.div>
 
             <motion.div
-                initial={{ x: -500, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{ type: "spring", duration: 1.3 }}>
-                <div className="sticky mt-10">
+                initial={{ y: 100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ type: "spring", duration: 2 }}>
+                <div className="sticky mt-110">
                     <div className="pb-1 mx-2">
                         <span className="font-gothic bg-custom-primary px-2 text-custom-secondary text-xs">
                             LIVE TV WEB STREAMER
@@ -44,7 +44,7 @@ export default function TVStreamer
                 </div>
 
                 <div className="p-3">
-                    <div className="text-center relative h-80 bg-custom-primary pt-8 font-light px-5 text-stone-950 overflow-scroll">
+                    <div className="text-center relative h-80 bg-custom-primary pt-3 font-light px-5 text-stone-950 overflow-scroll">
                         <div className="px-3 py-1 text-left">
                             <div className="my-3 text-center text-xl font-gothic">Features</div>
                             <ul className="">

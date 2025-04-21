@@ -1,36 +1,20 @@
-import { motion, useMotionValue, useTransform } from "motion/react";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { motion, useTransform } from "motion/react";
+import { Children, useEffect, useRef, useState } from "react";
 
 export default function CarouselHorizontal(props: any) {
     const containerRef = useRef<HTMLDivElement>(null);
-    const [width, setWidth] = useState(0);
-
-    useEffect(() => {
-        const el = containerRef.current;
-        if (!el) return;
-    
-        const ro = new ResizeObserver(entries => {
-          for (let entry of entries) {
-            setWidth(entry.contentRect.width);
-          }
-        });
-    
-        ro.observe(el); 
-
-        return () => {
-          ro.disconnect(); //pt unmount
-        };
-    }, []); 
+    let width = Children.count(props.children) * 240 + 800;
+    console.log(Children.count(props.children))
 
     const x = useTransform(
         props.scrollYProgress,
-        [0.24, 0.77],
-        [0, -width*2.15]
+        [0.5, 0.9],
+        [0, -width]
     );
 
     return (
-        <div className="relative w-full overflow-hidden w-full h-[68vh]">
-            <motion.div ref={containerRef} className="flex" style={{ x }}>
+        <div className="relative overflow-hidden h-100 p-3">
+        <motion.div ref={containerRef} className="flex ml-[calc(50vw-270px)]" style={{ x }}>
                 {props.children}
             </motion.div>
         </div>

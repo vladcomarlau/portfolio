@@ -9,7 +9,7 @@ export default function CarouselFade(props:any) {
     
     const slideNo = useTransform(
         props.scrollYProgress,
-        [0, 0.18, 0.8, 1],
+        [0, 0.2, 0.8, 1],
         [0, 0, childrenNo, childrenNo]
     );
 
