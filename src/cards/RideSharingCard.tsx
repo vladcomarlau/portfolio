@@ -1,5 +1,4 @@
 import GitButton from "../buttons/GitButton";
-import TryButton from "../buttons/TryButton";
 import { SkillBadges } from "./SkillBadges";
 
 export default function RideSharingCard() {
