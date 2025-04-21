@@ -78,7 +78,9 @@ export default function Home() {
           {homeSubPage == 0 && <CV/>}
           {homeSubPage == 1 && <Projects/>}
         </motion.div>
-        <Contact/>
+        <div className='mt-120'>
+          <Contact />
+        </div>
       </div>
     </>
   )

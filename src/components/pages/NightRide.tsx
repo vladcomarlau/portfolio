@@ -12,19 +12,6 @@ export default function NightRide() {
         target: targetRef,
         offset: ["start end", "end start"],
     });
-
-    const scale = useTransform(
-        scrollYProgress,
-        [0 , 0.2, 1],
-        [-0.2, 0.6, 1]
-    )
-
-    const borderRadius = useTransform(
-        scrollYProgress,
-        [0, 0.5, 0.8],
-        [30, 30, 0]
-    )
-
   
     return (
         <>              
@@ -32,7 +19,7 @@ export default function NightRide() {
                 <NightRideCard/>
             </RotateScrollR>
 
-            <motion.div ref={targetRef} className="h-500">
+            <motion.div ref={targetRef} className="h-300">
                 <div className="sticky top-20">
                     <div className="pb-1 mx-2">
                         <span className="font-gothic bg-custom-primary px-2 text-custom-secondary text-xs">
@@ -44,23 +31,23 @@ export default function NightRide() {
                         whileInView={{ filter: "blur(0px)" }}
                         transition={{ duration: 0.4 }}
                         className="w-screen absolute left-0 top-7 md:-ml-30 -ml-9">
-                        <CarouselHorizontal scrollYProgress={scrollYProgress}>
+                        <CarouselHorizontal scrollYProgress={scrollYProgress} offset={-650}>
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
-                                transition={{ duration: 0.4 }}
+                                transition={{ duration: 0.2 }}
                                 className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
                                 src="/nightRideScreenshots/1.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
-                                transition={{ duration: 0.4 }}
+                                transition={{ duration: 0.2 }}
                                 className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
                                 src="/nightRideScreenshots/2.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
-                                transition={{ duration: 0.4 }}
+                                transition={{ duration: 0.2 }}
                                 className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
                                 src="/nightRideScreenshots/3.mp4" autoPlay loop />
                         </CarouselHorizontal>

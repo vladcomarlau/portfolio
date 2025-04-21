@@ -22,7 +22,6 @@ export default function Hrms() {
             </RotateScrollL>
 
             <motion.div ref={targetRef} className="h-600">
-                Features
                 <motion.div className="sticky top-20 my-20"
                 initial={{ scale: 0.2, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}

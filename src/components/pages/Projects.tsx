@@ -30,7 +30,6 @@ export default function Projects() {
                 <div className='px-3 text-stone-100 font-extralight mt-120'>
                     <NightRide/>
                 </div>
-
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ export default function CarouselHorizontal(props: any) {
 
   const containerRef = useRef<HTMLDivElement>(null);
 
-  let width = Children.count(props.children) * 240 + 700;
+  let width = Children.count(props.children) * 240 + 700 + (props.offset ?? 0);
   console.log(Children.count(props.children))
 
   const x = useTransform(

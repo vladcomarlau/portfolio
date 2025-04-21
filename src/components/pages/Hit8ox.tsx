@@ -11,19 +11,6 @@ export default function Hit8ox() {
         target: targetRef,
         offset: ["start end", "end start"],
     });
-
-    const scale = useTransform(
-        scrollYProgress,
-        [0 , 0.2, 1],
-        [-0.2, 0.6, 1]
-    )
-
-    const borderRadius = useTransform(
-        scrollYProgress,
-        [0, 0.5, 0.8],
-        [30, 30, 0]
-    )
-
   
     return (
         <>              
@@ -43,35 +30,35 @@ export default function Hit8ox() {
                         whileInView={{ filter: "blur(0px)" }}
                         transition={{ duration: 0.4 }}
                         className="w-screen absolute left-0 top-7 md:-ml-30 -ml-9">
-                        <CarouselHorizontal scrollYProgress={scrollYProgress}>
+                        <CarouselHorizontal scrollYProgress={scrollYProgress} offset={-340}>
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
-                                transition={{ duration: 0.4 }}
+                                transition={{ duration: 0.2 }}
                                 className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
                                 src="/hit8oxScreenshots/1.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
-                                transition={{ duration: 0.4 }}
+                                transition={{ duration: 0.2 }}
                                 className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
                                 src="/hit8oxScreenshots/2.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
-                                transition={{ duration: 0.4 }}
+                                transition={{ duration: 0.2 }}
                                 className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
                                 src="/hit8oxScreenshots/3.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
-                                transition={{ duration: 0.4 }}
+                                transition={{ duration: 0.2 }}
                                 className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
                                 src="/hit8oxScreenshots/4.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
-                                transition={{ duration: 0.4 }}
+                                transition={{ duration: 0.2 }}
                                 className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
                                 src="/hit8oxScreenshots/5.mp4" autoPlay loop />
                         </CarouselHorizontal>
