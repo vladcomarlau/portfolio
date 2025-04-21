@@ -16,12 +16,13 @@ export default function Projects() {
                     </div>
                 </div>
 
-                <div className='text-stone-100 font-bold font-gothic px-2 italic text-2xl mt-20'>/ PROJECTS </div>
-                <div className='text-stone-100 font-bold font-gothic px-2 italic'>/ OTHER </div>
-                <div className='px-3 text-stone-100 font-extralight mt-20'>
+                <div className='text-stone-100 font-bold font-gothic px-2 italic mt-30'>/ JAVA APPLICATIONS </div>
+                <div className='px-3 text-stone-100 font-extralight mt-10'>
                     <RideSharing/>
                 </div>
-                
+
+                <div className='text-stone-100 font-bold font-gothic px-2 italic mt-170'>/ VIDEO GAMES </div>
+
             </div>
         </div>
     )
