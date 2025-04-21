@@ -1,5 +1,4 @@
 import { motion, useScroll, useSpring, useTransform } from "motion/react"
-import { Typewriter } from "./Typewriter"
 import { useRef } from "react";
 
 export default function Contact () {
@@ -26,7 +25,7 @@ export default function Contact () {
         initial={{ backgroundColor: "rgba(245,245,244,1)" }}
         animate={{ backgroundColor: "rgba(255,255,255,0)" }}
         transition={{delay:1.7, time:0.2}}
-        className="perspective-distant bg-stone-100" ref={targetRef}>
+        className="perspective-distant bg-stone-100 mt-20" ref={targetRef}>
         <motion.div
           initial={{x:-400, opacity: 0 }}
           animate={{x:0, opacity: 1 }}
@@ -50,14 +49,13 @@ export default function Contact () {
               }}>
 
               <p className='indent-5 text-base-100/90 font-serif'>
-                <div className="font-bold italic">Vlad-Constantin Comarlau</div>
+                <div className="font-bold italic text-xl">Vlad-Constantin Comarlau</div>
                 <div>Bucharest, Romania</div>
                 <div className="my-3">
                   <a className="block underline" href="tel:0752230503" >0752 230 503</a>
                   <a className="block underline" href="mailto: vladcom95@gmail.com" >vladcom95@gmail.com</a>
                   <a className="block underline" target="_" href="https://linkedin.com/in/comarlauvlad/" >linkedin.com/in/comarlauvlad/</a>
                 </div>
-                
               </p>
             </div>
           </div>

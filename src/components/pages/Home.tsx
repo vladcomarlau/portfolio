@@ -2,7 +2,6 @@ import { useRef, useState } from 'react'
 import Title from '../Title'
 import Projects from './Projects'
 import CV from './CV'
-import Footer from '../Footer'
 import ContactBadges from '../../buttons/ContactBadges'
 import { motion, AnimatePresence, useScroll, useTransform } from "motion/react"
 import MenuBar from '../MenuBar'

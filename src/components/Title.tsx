@@ -17,7 +17,7 @@ const Title = () => {
   );
 
   const rotateX = useSpring(
-    rotateXRaw, { damping: 85, stiffness: 1200, restDelta: 0.001 }
+    rotateXRaw, { damping: 80, stiffness: 1500, restDelta: 0.001 }
   );
   
   return (
