@@ -50,7 +50,7 @@ export default function Contact () {
 
               <p className='indent-5 text-base-100/90 font-serif'>
                 <div className="font-bold italic text-xl">Vlad-Constantin Comarlau</div>
-                <div>Bucharest, Romania</div>
+
                 <div className="my-3">
                   <a className="block underline" href="tel:0752230503" >0752 230 503</a>
                   <a className="block underline" href="mailto: vladcom95@gmail.com" >vladcom95@gmail.com</a>

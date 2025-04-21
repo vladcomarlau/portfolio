@@ -27,9 +27,9 @@ export default function NightRide() {
                         </span>
                     </div>
                     <motion.div
-                        initial={{ filter: "blur(60px)" }}
-                        whileInView={{ filter: "blur(0px)" }}
-                        transition={{ duration: 0.4 }}
+                        initial={{ scale: 0 }}
+                        whileInView={{ scale: 1 }}
+                        transition={{ type: "spring", duration: 1 }}
                         className="w-screen absolute left-0 top-7 md:-ml-30 -ml-9">
                         <CarouselHorizontal scrollYProgress={scrollYProgress} offset={-650}>
                             <motion.video
