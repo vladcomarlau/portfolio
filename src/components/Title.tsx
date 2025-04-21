@@ -39,7 +39,7 @@ const Title = () => {
               rounded-b-none text-shadow-md pt-22 sm:px-10
               ">
               <div>
-                Vlad-Constantin
+                Vlad
               </div>
               <div>
                 Comarlau
@@ -51,7 +51,7 @@ const Title = () => {
               style={{
                 backgroundColor: "rgb(69,10,223)",
               }}>
-              <div className='font-gothic text-base-100'>
+              <div className='font-gothic text-base-100 mx-3'>
                 About me
               </div>
               <p className='indent-5 text-base-100/90 font-serif'>

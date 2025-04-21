@@ -10,7 +10,7 @@ export default function CarouselHrms(props:any) {
                     HUMAN RESOURCES MANAGEMENT SYSTEM
                 </span>
             </div>
-            <div className="text-center font-gothic mt-4">Features</div>
+            <div className="text-center font-gothic mt-4 rounded-">Features</div>
             <CarouselFade scrollYProgress={props.scrollYProgress}>
                 
 

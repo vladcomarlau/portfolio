@@ -44,7 +44,7 @@ export default function TVStreamer
                 </div>
 
                 <div className="p-3">
-                    <div className="text-center relative h-80 bg-custom-primary pt-3 font-light px-5 text-stone-950 overflow-scroll">
+                    <div className="text-center relative h-80 bg-custom-primary pt-3 font-light px-5 text-stone-950 overflow-scroll rounded-box">
                         <div className="px-3 py-1 text-left">
                             <div className="my-3 text-center text-xl font-gothic">Features</div>
                             <ul className="">

@@ -21,6 +21,7 @@ export const Typewriter: React.FC<TypewriterProps> = ({ text, ...rest }) => (
         variants={sentenceVariants}
         initial="hidden"
         animate="visible"
+        className="text-justify mx-3 mb-2"
         {...rest}
     >
         {text.split("").map((char, i) => (

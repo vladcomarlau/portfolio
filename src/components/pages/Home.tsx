@@ -75,7 +75,11 @@ export default function Home() {
 
         <motion.div 
           className='md:mx-20 mt-30'>
-          {homeSubPage == 0 && <CV/>}
+          {homeSubPage == 0 && (
+            <div className='-mb-90'>
+              <CV/>
+            </div>
+          )}
           {homeSubPage == 1 && <Projects/>}
         </motion.div>
         <div className='mt-120'>
