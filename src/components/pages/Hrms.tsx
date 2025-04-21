@@ -18,7 +18,7 @@ export default function Hrms() {
   
     return (
         <>
-            <RotateScrollL className="mb-60 mt-50">
+            <RotateScrollL className="mb-30 mt-10">
                 <HrmsCard/>
             </RotateScrollL>
 

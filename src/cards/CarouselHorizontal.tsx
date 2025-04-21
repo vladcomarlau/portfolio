@@ -24,7 +24,7 @@ export default function CarouselHorizontal(props: any) {
 
     const x = useTransform(
         props.scrollYProgress,
-        [0.2, 0.8],
+        [0.24, 0.77],
         [0, -width*2.15]
     );
 

@@ -1,13 +1,9 @@
-import { motion } from "motion/react";
 import CarouselHorizontal from "./CarouselHorizontal";
 
 export default function CarouselTVStreamer(props:any) {
     
     return (
         <div>
-            <div className='text-stone-100 font-bold font-gothic px-2 italic text-xs'>
-                / PROJECTS / FULL STACK - WEB APPLICATIONS
-            </div>
             <div className="pb-1 mx-2">
                 <span className="font-gothic bg-custom-primary px-2 text-custom-secondary text-xs">
                     LIVE TV WEB STREAMER

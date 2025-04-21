@@ -14,9 +14,9 @@ export default function Projects() {
                     <TVStreamer/>
                 </div>
 
-                <div className='text-stone-100 font-bold font-gothic px-2 italic text-2xl'>/ PROJECTS </div>
+                <div className='text-stone-100 font-bold font-gothic px-2 italic text-2xl mt-20'>/ PROJECTS </div>
                 <div className='text-stone-100 font-bold font-gothic px-2 italic'>/ OTHER </div>
-                <div className='px-3 text-stone-100 font-extralight'>
+                <div className='px-3 text-stone-100 font-extralight mt-20'>
                     <RideSharing/>
                 </div>
                 

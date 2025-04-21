@@ -2,9 +2,7 @@ import { useRef } from "react";
 import RotateScrollR from "../../animations/RotateScrollR";
 import { motion, useScroll } from "motion/react";
 import TVStreamerCard from "../../cards/TVStreamerCard";
-import CarouselTVStreamer from "../../cards/CarouselTvStreamer";
-
-
+import CarouselTVStreamer from "../../cards/CarouselTVStreamer";
 
 export default function TVStreamer
 () {
@@ -33,6 +31,32 @@ export default function TVStreamer
                 </div>
             </motion.div>
 
+            <motion.div
+                initial={{ x: -500, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", duration: 1.3 }}>
+                <div className="sticky mt-10">
+                    <div className="pb-1 mx-2">
+                        <span className="font-gothic bg-custom-primary px-2 text-custom-secondary text-xs">
+                            LIVE TV WEB STREAMER
+                        </span>
+                    </div>
+                </div>
+
+                <div className="p-3">
+                    <div className="text-center relative h-80 bg-custom-primary pt-8 font-light px-5 text-stone-950 overflow-scroll">
+                        <div className="px-3 py-1 text-left">
+                            <div className="my-3 text-center text-xl font-gothic">Features</div>
+                            <ul className="">
+                                <li>- Live cable TV streaming in HD with ~10 seconds delay</li>
+                                <li>- Channel grid menu utomatically updates channel name by taking a screenshot when changing channels (This way it stays updated evem if the TV operator adds/removes TV channels from the channel grid)</li>
+                                <li>- Basic username and password authentication using built-in Simple File Server BasicAuthenticator</li>
+                                <li>- GUI window with credentials, logs and selection of capture device</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </motion.div>
         </>
     )
 }

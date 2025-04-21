@@ -30,7 +30,11 @@ export default function MenuBar(props:any) {
                     CV
                 </a>
                 <span className="text-base-100 text-md customButton font-extralight text-shadow-lg"
-                    onClick={() => window.scrollTo(0, 0)}>
+                    onClick={() => {
+                        props.setHomeSubPage(1);
+                        window.scrollTo(0, document.body.scrollHeight);
+
+                    }}>
                     Contact
                 </span>
             </div>

@@ -6,6 +6,7 @@ import Footer from '../Footer'
 import ContactBadges from '../../buttons/ContactBadges'
 import { motion, AnimatePresence, useScroll, useTransform } from "motion/react"
 import MenuBar from '../MenuBar'
+import Contact from '../Contact'
 
 export default function Home() {
   const [homeSubPage, setHomeSubPage] = useState(1);
@@ -78,8 +79,8 @@ export default function Home() {
           {homeSubPage == 0 && <CV/>}
           {homeSubPage == 1 && <Projects/>}
         </motion.div>
+        <Contact/>
       </div>
-      <Footer/>
     </>
   )
 }
