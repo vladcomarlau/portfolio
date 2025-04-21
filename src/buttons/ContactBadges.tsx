@@ -8,7 +8,7 @@ export default function ContactBadges(props: any) {
                     <motion.a
                         initial={{ scale: 0.2, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        transition={{ type: "spring", delay: 0.8, duration: 0.4 }}
+                        transition={{ type: "spring", delay: 0.6, duration: 0.4 }}
                         href="mailto:vladcom95@gmail.com">
                         <span className="badge badge-xl shadow-lg rounded-full customDarkGlass text-sm my-1 ml-1">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(51,112,216)" className="size-5">
@@ -22,7 +22,7 @@ export default function ContactBadges(props: any) {
                     <motion.a
                         initial={{ scale: 0.2, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        transition={{ type: "spring", delay: 1, duration: 0.4 }}
+                        transition={{ type: "spring", delay: 0.7, duration: 0.4 }}
                         href="tel:0752230503">
                         <span className="badge badge-xl shadow-lg rounded-full customDarkGlass text-sm my-1 ml-1">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="green" className="size-5">
@@ -36,7 +36,7 @@ export default function ContactBadges(props: any) {
                     <motion.button
                         initial={{ scale: 0.2, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        transition={{ type: "spring", delay: 0.3, duration: 0.4 }}
+                        transition={{ type: "spring", delay: 0.8, duration: 0.4 }}
                         onClick={() => { props.handlePageChange(0, 840) }}>
                         <span className="badge badge-xl shadow-lg rounded-full customDarkGlass text-sm cursor-pointer">
                             <a className='text-stone-700 font-bold'>CV</a>
@@ -45,7 +45,7 @@ export default function ContactBadges(props: any) {
                     <motion.a
                         initial={{scale: 0.2, opacity: 0 }}
                         animate={{scale: 1, opacity: 1 }}
-                        transition={{ type:"spring", delay: 0.5, duration: 0.4 }}
+                        transition={{ type:"spring", delay: 0.9, duration: 0.4 }}
                         href="https://github.com/vladcomarlau"
                         target="_">
                         <span className="badge badge-xl customDarkGlass shadow-xl ml-1">
@@ -57,7 +57,7 @@ export default function ContactBadges(props: any) {
                     <motion.a
                         initial={{scale: 0.2, opacity: 0 }}
                         animate={{scale: 1, opacity: 1 }}
-                        transition={{ type:"spring", delay: 0.6, duration: 0.4 }}
+                        transition={{ type:"spring", delay: 1, duration: 0.4 }}
                         href="https://www.linkedin.com/in/comarlauvlad/"
                         target="_">
                         <span className="badge badge-xl shadow-lg rounded-full customDarkGlass text-sm ml-1 mr-1">
