@@ -19,13 +19,13 @@ export default function MenuBar(props:any) {
                 <a className={props.homeSubPage === 0 ?
                     "text-md customButton font-extralight" :
                     "text-md customButtonActive font-extralight"}
-                    onClick={() => props.setHomeSubPage(1)}>
+                    onClick={() => props.setHomeSubPage(1, 840)}>
                     Projects
                 </a>
                 <a className={props.homeSubPage === 1 ?
                     "text-md customButton font-extralight" :
                     "text-md customButtonActive font-extralight"}
-                    onClick={() => props.setHomeSubPage(0)}
+                    onClick={() => props.setHomeSubPage(0, 840)}
                     style={{ marginLeft: "4px" }}>
                     CV
                 </a>

@@ -36,18 +36,13 @@ const Title = () => {
           <div className=" text-stone-950 bg-stone-100 h-screen">
             <div
               className="font-gothic italic md:text-8xl sm:text-6xl text-6xl p-3 font-extrabold 
-              rounded-b-none text-shadow-md pt-22 sm:px-10
-              ">
-              <div>
-                Vlad
-              </div>
-              <div>
-                Comarlau
-              </div>
+                rounded-b-none text-shadow-md pt-27 sm:px-10">
+              <div>Vlad</div>
+              <div>Comarlau</div>
             </div>
 
             <div className='sm:w-2/3 w-6/7 mb-8 rounded-pill mx-auto p-3 shadow-xl backdrop-blur-sm
-            font-extralight border border-stone-500/15 -mt-4'
+            font-extralight border border-stone-500/15 mt-[2px]'
               style={{
                 backgroundColor: "rgb(69,10,223)",
               }}>
@@ -56,8 +51,8 @@ const Title = () => {
               </div>
               <p className='indent-5 text-base-100/90 font-serif'>
                 <Typewriter text="Focused on full-stack web development using Java, Spring Boot, React, REST APIs and
-              relational databases. Dual wielding bachelor's degree: one in computer science from
-              the Faculty of Cybernetics, Statistics and Economic Informatics, the other one in management (ASE). Enthusiastic about problem-solving and continuous learning."/>
+                relational databases. Dual wielding bachelor's degree: one in computer science from
+                the Faculty of Cybernetics, Statistics and Economic Informatics, the other one in management (ASE). Enthusiastic about problem-solving and continuous learning."/>
               </p>
             </div>
           </div>

@@ -11,9 +11,9 @@ export default function Home() {
   const [homeSubPage, setHomeSubPage] = useState(1);
   const [isTitleVisible, setIsTitleVisible] = useState(false);
 
-  const handlePageChange = (x:number) => {
-    setHomeSubPage(x);
-    window.scrollTo(0, 830);
+  const handlePageChange = (page: number, scroll: number) => {
+    setHomeSubPage(page);
+    window.scrollTo(0, scroll ?? 830);
   }
 
   const background = (
@@ -48,7 +48,7 @@ export default function Home() {
           onViewportLeave={() => setIsTitleVisible(false)}>
           <div className='sm:mx-20 mx-10 text-right absolute right-0'
             style={{ marginTop: "30px", marginBottom: "-60px", zIndex: "300" }}>
-            <ContactBadges />
+            <ContactBadges handlePageChange={handlePageChange}/>
           </div>
         </motion.div>
 

@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import RotateScrollR from "../../animations/RotateScrollR";
-import { motion, useScroll, useTransform } from "motion/react";
-import Hit8oxCard from "../../cards/Hit8oxCard";
+import { motion, useScroll } from "motion/react";
 import NightRideCard from "../../cards/NightRideCard";
 import CarouselHorizontal from "../../cards/CarouselHorizontal";
 
@@ -36,19 +35,19 @@ export default function NightRide() {
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
+                                className="h-[50vh] mx-auto px-4 aspect-square"
                                 src="/nightRideScreenshots/1.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
+                                className="h-[50vh] mx-auto px-4 aspect-square"
                                 src="/nightRideScreenshots/2.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
+                                className="h-[50vh] mx-auto px-4 aspect-square"
                                 src="/nightRideScreenshots/3.mp4" autoPlay loop />
                         </CarouselHorizontal>
                     </motion.div>
