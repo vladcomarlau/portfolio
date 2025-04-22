@@ -8,7 +8,7 @@ export default function BusinessApp() {
   
     return (
         <>
-            <RotateScrollR className="mb-30 mt-30">
+            <RotateScrollR className="mb-30 mt-10">
                 <BusinessAppCard/>
             </RotateScrollR>
 

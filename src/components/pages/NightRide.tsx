@@ -18,7 +18,7 @@ export default function NightRide() {
                 <NightRideCard/>
             </RotateScrollR>
 
-            <motion.div ref={targetRef} className="h-300">
+            <motion.div ref={targetRef} className="h-100">
                 <div className="sticky top-20">
                     <div className="pb-1 mx-2">
                         <span className="font-gothic bg-custom-primary px-2 text-custom-secondary text-xs">

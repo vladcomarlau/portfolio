@@ -12,7 +12,7 @@ export default function MenuBar(props:any) {
                 style={{padding:"7px 0px 31px 0px", 
                 border:"1px solid rgba(255,255,255,0.2)",
                 height:"39px"}}>
-                <span className="inline-block md:mx-4 mx-0 text-base-100 font-gothic italic cursor-default px-1">
+                <span className="inline-block xs:mx-4 mx-0 text-base-100 font-gothic italic cursor-default px-1">
                     Vlad Comarlau
                 </span>
                 <a className={props.homeSubPage === 0 ?

@@ -14,7 +14,7 @@ export default function Hit8ox() {
   
     return (
         <>              
-            <RotateScrollR className="mt-10 mb-10">
+            <RotateScrollR className="mb-10">
                 <Hit8oxCard/>
             </RotateScrollR>
 
@@ -35,31 +35,31 @@ export default function Hit8ox() {
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
+                                className="h-[50vh] mx-auto px-4 aspect-square"
                                 src="/hit8oxScreenshots/1.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
+                                className="h-[50vh] mx-auto px-4 aspect-square"
                                 src="/hit8oxScreenshots/2.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
+                                className="h-[50vh] mx-auto scale-90 px-4 aspect-square"
                                 src="/hit8oxScreenshots/3.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
+                                className="h-[50vh] mx-auto px-4 aspect-square"
                                 src="/hit8oxScreenshots/4.mp4" autoPlay loop />
                             <motion.video
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-[50vh] mx-auto px-4 aspect-square shadow-2xl"
+                                className="h-[50vh] mx-auto px-4 aspect-square"
                                 src="/hit8oxScreenshots/5.mp4" autoPlay loop />
                         </CarouselHorizontal>
                     </motion.div>
