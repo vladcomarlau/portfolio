@@ -23,18 +23,18 @@ export default function TVStreamer
             <motion.div ref={targetRef} className="h-200">
                 <div className="sticky top-22">
                     <motion.div
-                        initial={{ scale:0.2, opacity: 0 }}
+                        initial={{ scale: 0.6, opacity: 0.3 }}
                         whileInView={{ scale: 1, opacity: 1 }}
-                        transition={{ type: "spring", duration: 0.7}}>
+                        transition={{ type: "spring", duration: 1.2 }}>
                         <CarouselTVStreamer scrollYProgress={scrollYProgress}/>
                     </motion.div>
                 </div>
             </motion.div>
 
             <motion.div
-                initial={{ y: 100, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ type: "spring", duration: 2 }}>
+                initial={{ scale: 0.9, opacity: 0.4 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ type: "spring", duration: 0.7 }}>
                 <div className="sticky mt-110">
                     <div className="pb-1 mx-2">
                         <span className="font-gothic bg-custom-primary px-2 text-custom-secondary text-xs">

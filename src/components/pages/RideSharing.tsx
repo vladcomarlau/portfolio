@@ -21,18 +21,18 @@ export default function RideSharing() {
 
             <motion.div ref={targetRef} className="h-600 mt-40">
                 <motion.div className="sticky top-20 my-30"
-                    initial={{ scale: 0.2, opacity: 0 }}
+                    initial={{ scale: 0.8, opacity: 0.3 }}
                     whileInView={{ scale: 1, opacity: 1 }}
-                    transition={{ type: "spring", duration: 1}}>
+                    transition={{ type: "spring", duration: 0.7}}>
                     <CarouselRideSharing scrollYProgress={scrollYProgress}/>
                 </motion.div>
             </motion.div>
 
             <motion.div
-                initial={{ y: 100, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ type: "spring", duration: 2 }}>
-                <div className="sticky mt-140">
+                initial={{ scale: 0.7, opacity: 0.3 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ type: "spring", duration: 0.7 }}>
+                <div className="sticky mt-90">
                     <div className="pb-1 mx-2">
                         <span className="font-gothic bg-custom-primary px-2 text-custom-secondary text-xs">
                             RIDE SHARING ANDROID APP

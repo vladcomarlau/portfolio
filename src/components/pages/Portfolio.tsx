@@ -33,8 +33,11 @@ export default function Portfolio() {
                     <div className="p-3">
                         <div className="text-center relative bg-custom-primary pt-3 font-light px-5 text-stone-950 overflow-scroll rounded-box">
                             <div className="text-left pb-5">
+                                <p className="text-center font-gothic">
+                                    OLDER CONCEPT
+                                </p>
                                 <p className="indent-5 mb-3 text-sm italic mx-5">
-                                    Iterations: something about having my 3D head scanned with an iPhone floating around felt too obtrusive..
+                                    Something about having my 3D head scanned with an iPhone floating around felt too obtrusive..
                                 </p>
                                 <video className="rounded" src="/portfolio.mp4" loop autoPlay/>
                             </div>

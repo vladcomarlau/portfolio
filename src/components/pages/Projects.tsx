@@ -33,7 +33,7 @@ export default function Projects() {
                     <RideSharing/>
                 </div>
 
-                <div className='text-stone-100 font-bold font-gothic px-2 italic mt-40'>/ VIDEO GAMES </div>
+                <div className='text-stone-100 font-bold font-gothic px-2 italic mt-30'>/ VIDEO GAMES </div>
                 
                 <div className='px-3 text-stone-100 font-extralight'>
                     <Hit8ox/>
