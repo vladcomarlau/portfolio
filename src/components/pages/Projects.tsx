@@ -21,7 +21,7 @@ export default function Projects() {
                     <Hrms/>
                 </div>
 
-                <div className="mt-[50vw]">
+                <div className="mt-[55vh]">
                     <Portfolio />
                 </div>
 
