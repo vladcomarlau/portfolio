@@ -8,11 +8,13 @@ import MenuBar from '../MenuBar'
 import Contact from '../Contact'
 
 export default function Home() {
-  const [homeSubPage, setHomeSubPage] = useState(1);
+  const [Page, setPage] = useState(0);
+  const [activeButton, setActiveButton] = useState(0);
   const [isTitleVisible, setIsTitleVisible] = useState(false);
 
   const handlePageChange = (page: number, scroll: number) => {
-    setHomeSubPage(page);
+    setPage(page);
+    setActiveButton(page);
     window.scrollTo(0, scroll ?? 830);
   }
 
@@ -60,7 +62,7 @@ export default function Home() {
         <div className='fixed w-full mt-5'
           style={{ top: "0", zIndex: "300" }}>
           <AnimatePresence>
-            {!isTitleVisible && <MenuBar setHomeSubPage={handlePageChange} homeSubPage={homeSubPage}/>}
+            {!isTitleVisible && <MenuBar setPage={handlePageChange} Page={Page} setActiveButton={setActiveButton} activeButton={activeButton}/>}
           </AnimatePresence>
         </div>
 
@@ -75,17 +77,19 @@ export default function Home() {
 
         <motion.div 
           className='md:mx-20 mt-30'>
-          {homeSubPage == 0 && (
+          {Page == 0 && <Projects/>}
+          {Page == 1 && (
             <div className='-mb-90'>
               <CV/>
             </div>
           )}
-          {homeSubPage == 1 && <Projects/>}
         </motion.div>
         
-        <div className='mt-120'>
+        <motion.div className='mt-120'
+          onViewportEnter={() => setActiveButton(2)}
+          onViewportLeave={() => setActiveButton(Page)}>
           <Contact />
-        </div>
+        </motion.div>
       </div>
     </>
   )

@@ -32,7 +32,7 @@ export default function Contact () {
           transition={{ type: "spring", delay:0.3, duration: 2 }}
           style={{ rotateX: rotateX }}
           className="h-screen backface-hidden origin-top">
-          <div className=" text-stone-950 bg-stone-100 h-screen">
+          <div className=" text-stone-950 bg-stone-100 h-screen text-center">
             <div
               className="font-gothic italic md:text-8xl sm:text-6xl text-6xl p-3 font-extrabold 
               rounded-b-none text-shadow-md pt-22 sm:px-10
@@ -42,7 +42,7 @@ export default function Contact () {
               </div>
             </div>
 
-            <div className='sm:w-2/3 w-6/7 mb-8 rounded-pill mx-auto p-3 shadow-xl backdrop-blur-sm
+            <div className='w-100 mb-8 text-start rounded-pill mx-auto p-3 shadow-xl backdrop-blur-sm
             font-extralight border border-stone-500/15 -mt-1'
               style={{
                 backgroundColor: "rgb(69,10,223)",

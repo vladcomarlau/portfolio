@@ -63,7 +63,7 @@ export default function ContactBadges(props: any) {
                         initial={{ scale: 0.2, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ type: "spring", delay: 1, duration: 0.4 }}
-                        onClick={() => { props.handlePageChange(0, 840) }}
+                        onClick={() => { props.handlePageChange(1, 840) }}
                         className="mr-1">
                         <span className="badge badge-xl shadow-lg rounded-full customDarkGlass text-sm cursor-pointer">
                             <a className='text-stone-700 font-bold'>CV</a>
