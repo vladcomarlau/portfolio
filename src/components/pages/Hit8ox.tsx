@@ -2,7 +2,7 @@ import { useRef } from "react";
 import RotateScrollR from "../../animations/RotateScrollR";
 import { motion, useScroll } from "motion/react";
 import Hit8oxCard from "../../cards/Hit8oxCard";
-import CarouselHorizontal from "../../cards/CarouselHorizontal";
+import CarouselHorizontal from "../../carousels/CarouselHorizontal";
 
 export default function Hit8ox() {
     const targetRef = useRef(null);

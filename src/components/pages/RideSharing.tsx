@@ -2,7 +2,7 @@ import { useRef } from "react";
 import RotateScrollL from "../../animations/RotateScrollL";
 import { motion, useScroll } from "motion/react";
 import RideSharingCard from "../../cards/RideSharingCard";
-import CarouselRideSharing from "../../cards/CarouselRideSharing";
+import CarouselRideSharing from "../../carousels/CarouselRideSharing";
 
 export default function RideSharing() {
     const targetRef = useRef(null);

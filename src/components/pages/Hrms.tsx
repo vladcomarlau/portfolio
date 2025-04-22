@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import RotateScrollL from "../../animations/RotateScrollL";
-import CarouselHrms from "../../cards/CarouselHrms";
+import CarouselHrms from "../../carousels/CarouselHrms";
 import HrmsCard from "../../cards/HrmsCard";
 import { motion, useScroll } from "motion/react";
 

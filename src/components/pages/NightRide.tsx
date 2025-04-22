@@ -2,7 +2,7 @@ import { useRef } from "react";
 import RotateScrollR from "../../animations/RotateScrollR";
 import { motion, useScroll } from "motion/react";
 import NightRideCard from "../../cards/NightRideCard";
-import CarouselHorizontal from "../../cards/CarouselHorizontal";
+import CarouselHorizontal from "../../carousels/CarouselHorizontal";
 
 export default function NightRide() {
     const targetRef = useRef(null);

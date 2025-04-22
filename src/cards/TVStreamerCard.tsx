@@ -14,7 +14,7 @@ export default function TVStreamerCard() {
                 <span className="text-custom-primary font-serif rounded-field">
                     Full Stack Web Application</span>
             </div>
-            <div className="font-serif py-3">
+            <div className="font-serif py-3 text-stone-100">
                 <p className="indent-10 p-2">
                     Live TV web server (tv box remote control and viewer) with auto-updating channel list.
                 </p>

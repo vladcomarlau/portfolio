@@ -2,7 +2,7 @@ import { useRef } from "react";
 import RotateScrollR from "../../animations/RotateScrollR";
 import { motion, useScroll } from "motion/react";
 import TVStreamerCard from "../../cards/TVStreamerCard";
-import CarouselTVStreamer from "../../cards/CarouselTVStreamer";
+import CarouselTVStreamer from "../../carousels/CarouselTVStreamer";
 
 export default function TVStreamer
 () {
@@ -16,7 +16,7 @@ export default function TVStreamer
   
     return (
         <>              
-            <RotateScrollR className="mt-100 mb-40">
+            <RotateScrollR className="mt-40 mb-40">
                 <TVStreamerCard/>
             </RotateScrollR>
 
