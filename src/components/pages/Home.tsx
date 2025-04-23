@@ -15,7 +15,22 @@ export default function Home() {
   const handlePageChange = (page: number, scroll: number) => {
     setPage(page);
     setActiveButton(page);
-    window.scrollTo(0, scroll ?? 830);
+
+
+    function delay(time: number) {
+      return new Promise(resolve => setTimeout(resolve, time));
+    }
+
+    delay(100).then(() => {
+      const target = document.getElementById(page.toString());
+      if (target != null) {
+        window.scrollTo({
+          top: target.getBoundingClientRect().top + window.pageYOffset - 60,
+          behavior: 'smooth'
+        });
+      }
+    });
+    
   }
 
   const background = (
@@ -62,7 +77,7 @@ export default function Home() {
         <div className='fixed w-full mt-5'
           style={{ top: "0", zIndex: "300" }}>
           <AnimatePresence>
-            {!isTitleVisible && <MenuBar setPage={handlePageChange} Page={Page} setActiveButton={setActiveButton} activeButton={activeButton}/>}
+            {!isTitleVisible && <MenuBar handlePageChange={handlePageChange} Page={Page} setActiveButton={setActiveButton} activeButton={activeButton}/>}
           </AnimatePresence>
         </div>
 

@@ -31,8 +31,8 @@ export default function Contact () {
           animate={{x:0, opacity: 1 }}
           transition={{ type: "spring", delay:0.3, duration: 2 }}
           style={{ rotateX: rotateX }}
-          className="h-screen backface-hidden origin-top">
-          <div className=" text-stone-950 bg-stone-100 h-screen text-center">
+          className="h-screen backface-hidden origin-top bg-stone-100">
+          <div className=" text-stone-950 h-screen max-w-5xl mx-auto">
             <div
               className="font-gothic italic md:text-8xl sm:text-6xl text-6xl p-3 font-extrabold 
               rounded-b-none text-shadow-md pt-22 sm:px-10

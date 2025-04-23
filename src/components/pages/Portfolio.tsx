@@ -1,24 +1,17 @@
-import { useRef } from "react";
 import RotateScrollL from "../../animations/RotateScrollL";
-import { motion, useScroll } from "motion/react";
+import { motion } from "motion/react";
 import PortfolioCard from "../../cards/PortfolioCard";
 
 export default function Portfolio() {
-    const targetRef = useRef(null);
-    
-    const { scrollYProgress } = useScroll({
-        target: targetRef,
-        offset: ["start end", "end start"],
-    });
 
   
     return (
         <>
-            <RotateScrollL className="mb-30 mt-40">
+            <RotateScrollL className="mb-30">
                 <PortfolioCard/>
             </RotateScrollL>
 
-            <motion.div ref={targetRef} className="">
+            <motion.div >
                 <motion.div className="sticky top-20"
                 initial={{ scale: 0.2, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}

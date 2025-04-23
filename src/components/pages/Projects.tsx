@@ -9,7 +9,8 @@ import TVStreamer from "./TVStreamer";
 export default function Projects() {
 
     return (
-        <div className="m-3 p-3 mb-20">
+        <div className="m-3 p-3 mb-20 max-w-5xl mx-auto"
+            id="0">
             <div className=''>
                 <div className='text-stone-100 font-bold font-gothic px-2 italic text-2xl'>/ PROJECTS </div>
                 

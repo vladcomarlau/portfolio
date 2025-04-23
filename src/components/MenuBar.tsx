@@ -7,19 +7,19 @@ export default function MenuBar(props:any) {
             animate={{ y: 0, scale: 1.0 }}
             exit={{ y: -100, scale: 0.2 }}
             transition={{ type: "spring", duration: 1 }}
-            className="mx-auto">
-            <div className="customGlass md:mx-45 mx-3 text-shadow-md rounded-full"
+            className="max-w-5xl mx-auto">
+            <div className="customGlass text-shadow-md rounded-full mx-3"
                 style={{padding:"7px 0px 31px 0px", 
                 border:"1px solid rgba(255,255,255,0.2)",
                 height:"39px"}}>
-                <span className="inline-block sm:mx-4 mx- text-base-100 font-gothic italic cursor-default px-1">
+                <span className="inline-block sm:mx-4 text-base-100 font-gothic italic cursor-default px-1">
                     Vlad Comarlau
                 </span>
                 <a className={props.activeButton === 0 ?
                     "text-md customButtonActive font-extralight" :
                     "text-md customButton font-extralight" }
                     onClick={() => {
-                        props.setHomeSubPage(1, 840);
+                        props.handlePageChange(0, 840);
                         props.setActiveButton(0);
                     }}>
                     Projects
@@ -28,7 +28,7 @@ export default function MenuBar(props:any) {
                     "text-md customButtonActive font-extralight" :
                     "text-md customButton font-extralight" }
                     onClick={() => {
-                        props.setHomeSubPage(0, 840);
+                        props.handlePageChange(1, 840);
                         props.setActiveButton(1);
                     }}
                     style={{ marginLeft: "4px" }}>
