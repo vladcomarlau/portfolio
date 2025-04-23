@@ -21,10 +21,10 @@ export default function NightRideCard() {
                     "NightRide" is an 8‑level, high‑speed traffic‑dodging game in Lua for the PICO‑8 fantasy console, overcoming strict ~80s‑era memory and feature limits.
                 </p>
                 <p className="indent-10">
-                    Engineered custom particle systems, sprite‑rotation routines and physics/collision detection from scratch (PICO‑8 lacks built‑in support).
+                    Custom particle systems, sprite‑rotation routines and physics/collision detection built from scratch (PICO‑8 lacks built‑in support).
                 </p>
                 <p className="indent-10">
-                    Optimized all code, graphics and audio to fit into a single .PNG “cartridge,” with procedurally varied traffic visuals, unlockable abilities and a surprise ending.
+                    Optimized all code, graphics and audio to fit into a single .PNG “cartridge”.
                 </p>
             </div>
 

@@ -7,7 +7,7 @@ export default function CarouselHrms(props:any) {
         <CarouselFade scrollYProgress={props.scrollYProgress}>
             
             <PresenceDiv key="organisation">
-                <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] mx-auto">
+                <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
                     <div className="font-gothic my-1 mt-3 text-xl">Organigram</div>
                     <img className="w-full rounded-box" src="hrmsScreenshots/1.jpeg" />
                 </div>
@@ -32,7 +32,7 @@ export default function CarouselHrms(props:any) {
             </PresenceDiv>
 
             <PresenceDiv key="salary">
-                <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] mx-auto">
+                <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
                     <div className="font-gothic my-1 mt-3 text-xl">Salary</div>
                     <img className="w-full rounded-box" src="hrmsScreenshots/2.jpeg" />
                 </div>
@@ -56,7 +56,7 @@ export default function CarouselHrms(props:any) {
             </PresenceDiv>
 
             <PresenceDiv key="leaves">
-                <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] mx-auto">
+                <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
                     <div className="font-gothic my-1 mt-3 text-xl">Leaves</div>
                     <img className="w-full rounded-box" src="hrmsScreenshots/3.jpeg" />
                 </div>
@@ -84,7 +84,7 @@ export default function CarouselHrms(props:any) {
             </PresenceDiv>
 
             <PresenceDiv key="accountsManager">
-            <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] mx-auto">
+            <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
                     <div className="font-gothic my-1 mt-3 text-xl">Accounts Manager</div>
                     <img className="w-full rounded-box" src="hrmsScreenshots/4.jpeg" />
                 </div>
@@ -115,7 +115,7 @@ export default function CarouselHrms(props:any) {
             </PresenceDiv>
 
             <PresenceDiv key="performanceEvaluation">
-                <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] mx-auto">
+                <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
                     <div className="font-gothic my-1 mt-3 text-xl">Performance Evaluation</div>
                     <img className="w-full rounded-box" src="hrmsScreenshots/5.jpeg" />
                 </div>

@@ -12,13 +12,14 @@ export default function Home() {
   const [activeButton, setActiveButton] = useState(0);
   const [isTitleVisible, setIsTitleVisible] = useState(false);
 
-  const handlePageChange = (page: number, scroll: number) => {
-    setPage(page);
-    setActiveButton(page);
+  function delay(time: number) {
+    return new Promise(resolve => setTimeout(resolve, time));
+  }
 
-
-    function delay(time: number) {
-      return new Promise(resolve => setTimeout(resolve, time));
+  const handlePageChange = (page: number) => {
+    if(page != -1) {
+      setPage(page);
+      setActiveButton(page);
     }
 
     delay(100).then(() => {
@@ -63,13 +64,15 @@ export default function Home() {
         <motion.div className='gradientFade h-40 -mb-40'
           onViewportEnter={() => setIsTitleVisible(true)}
           onViewportLeave={() => setIsTitleVisible(false)}>
-          <div className='sm:mx-20 mx-10 text-right absolute right-0'
+          <div className='absolute mx-auto w-full'
             style={{ marginTop: "30px", marginBottom: "-60px", zIndex: "300" }}>
-            <ContactBadges handlePageChange={handlePageChange}/>
+            <div className='mx-auto max-w-5xl text-end px-4'>
+              <ContactBadges handlePageChange={handlePageChange} />
+            </div>
           </div>
         </motion.div>
 
-        <div
+        <div id="-1"
           style={{zIndex:'10'}}>
           <Title />
         </div>

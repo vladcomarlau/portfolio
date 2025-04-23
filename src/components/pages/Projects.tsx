@@ -26,7 +26,7 @@ export default function Projects() {
                     <Portfolio />
                 </div>
 
-                <div className="px-3 ">
+                <div className="px-3">
                     <TVStreamer />
                 </div>                
 

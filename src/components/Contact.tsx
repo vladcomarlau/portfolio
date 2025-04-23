@@ -42,8 +42,8 @@ export default function Contact () {
               </div>
             </div>
 
-            <div className='w-100 mb-8 text-start rounded-pill mx-auto p-3 shadow-xl backdrop-blur-sm
-            font-extralight border border-stone-500/15 -mt-1'
+            <div className='md:w-110 w-90 mb-8 text-start rounded-pill mx-auto p-3 shadow-xl backdrop-blur-sm
+            font-extralight border border-stone-500/15'
               style={{
                 backgroundColor: "rgb(69,10,223)",
               }}>

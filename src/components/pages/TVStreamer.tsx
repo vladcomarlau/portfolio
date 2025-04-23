@@ -12,11 +12,10 @@ export default function TVStreamer
         target: targetRef,
         offset: ["start end", "end start"],
     });
-
   
     return (
         <>              
-            <RotateScrollR className="mt-40 mb-40">
+            <RotateScrollR className="mt-0 mb-40">
                 <TVStreamerCard/>
             </RotateScrollR>
 
