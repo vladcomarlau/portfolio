@@ -6,13 +6,13 @@ export default function Contact () {
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ["start end", "end start"],
+    offset: ["start end", "end end"],
   });
 
   const rotateXRaw = useTransform(
     scrollYProgress, 
-    [0.1, 1], 
-    [-100, 125]
+    [0.1, 0.6], 
+    [-100, 0]
   );
 
   const rotateX = useSpring(
@@ -31,8 +31,8 @@ export default function Contact () {
           animate={{x:0, opacity: 1 }}
           transition={{ type: "spring", delay:0.3, duration: 2 }}
           style={{ rotateX: rotateX }}
-          className="h-screen backface-hidden origin-top bg-stone-100">
-          <div className=" text-stone-950 h-screen max-w-5xl mx-auto">
+          className="h-dvh backface-hidden origin-top bg-stone-100">
+          <div className=" text-stone-950 max-w-5xl mx-auto">
             <div
               className="font-gothic italic md:text-8xl sm:text-6xl text-6xl p-3 font-extrabold 
               rounded-b-none text-shadow-md pt-22 sm:px-10
