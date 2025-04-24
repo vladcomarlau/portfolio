@@ -23,7 +23,7 @@ export default function RotateScrollL(props:any) {
     );
     
     return (
-        <div className={"perspective-dramatic " + (props.className ?? "")}>
+        <div className={"perspective-dramatic overflow-hidden " + (props.className ?? "")}>
             <motion.div ref={ref} className="rounded-box p-4 mb-20"
                 style={{ rotateZ: rotateZ, rotateX: rotateX }}>
                 {props.children}

@@ -35,12 +35,9 @@ export default function Home() {
   }
 
   const background = (
-    <div className='background w-full' 
+    <div className='background fixed w-screen h-screen top-0' 
       style={{  
-        height: "100vh",
         zIndex: "-100",
-        position:"fixed",
-        top: "0px"
       }}/>
   )
 
@@ -60,7 +57,7 @@ export default function Home() {
   return (
     <>
       {background}
-      <div style={{zIndex:"100"}}>
+      <div className='' style={{zIndex:"100"}}>
         <motion.div className='gradientFade h-40 -mb-40'
           onViewportEnter={() => setIsTitleVisible(true)}
           onViewportLeave={() => setIsTitleVisible(false)}>

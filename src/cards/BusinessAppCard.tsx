@@ -4,7 +4,7 @@ import { SkillBadges } from "./SkillBadges";
 
 export default function BusinessAppCard() {
     return(
-        <div className="bg-custom-secondary rounded-box p-5 max-w-2xl m-auto">
+        <div className="bg-custom-secondary rounded-box p-5 max-w-2xl m-auto ">
             <div className="-mt-8 mb-3 text-right">
                 <GitButton url="https://github.com/vladcomarlau/portfolio"/>
                 <TryButton url="/business/"/>
@@ -24,7 +24,9 @@ export default function BusinessAppCard() {
                 </p>
             </div>
 
-            <SkillBadges skills={["Java", "Spring", "Spring Boot", "JWT", "React", "Vite", "TypeScript", "Kubernetes", "Docker", "Jenkins", "AWS", "Gradle", "npm", "Motion Framer", "TailwindCSS", "OpenAi API"]}/>
+            <SkillBadges skills={["Java", "Spring", "Spring Boot", "JWT", "React", 
+                "Vite", "TypeScript", "Kubernetes", "Docker", "Jenkins", "AWS", 
+                "Gradle", "npm", "Motion Framer", "TailwindCSS", "OpenAi API"]}/>
         </div>
     )
 }
