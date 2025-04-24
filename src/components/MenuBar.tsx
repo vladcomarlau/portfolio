@@ -12,13 +12,13 @@ export default function MenuBar(props:any) {
                 style={{padding:"7px 0px 31px 0px", 
                 border:"1px solid rgba(255,255,255,0.2)",
                 height:"39px"}}>
-                <span className="inline-block sm:mx-4 text-base-100 font-gothic italic cursor-pointer px-1
+                <span className="inline-block sm:mx-4 text-base-100 font-gothic italic cursor-pointer px-1 mx-1
                     select-none"
                     onClick={() => {
                         props.handlePageChange(-1);
                         props.setActiveButton(0);
                     }}>
-                    Vlad Comarlau
+                    Comarlau
                 </span>
                 <a className={props.activeButton === 0 ?
                     "text-md customButtonActive font-extralight" :

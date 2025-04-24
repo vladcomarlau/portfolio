@@ -32,35 +32,60 @@ export default function Hit8ox() {
                         className="w-screen absolute left-0 top-7 md:-ml-29 -ml-9">
                         <CarouselHorizontal scrollYProgress={scrollYProgress} offset={-1100}>
                             <motion.video
+                                autoPlay
+                                loop
+                                playsInline
+                                muted
+                                webkit-playsInline
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
                                 className="h-60 mx-auto px-4 aspect-square"
-                                src="/hit8oxScreenshots/1.mp4" autoPlay loop />
+                                src="/hit8oxScreenshots/1.mp4" />
                             <motion.video
+                                autoPlay
+                                loop
+                                playsInline
+                                muted
+                                webkit-playsInline
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
                                 className="h-60 mx-auto px-4 aspect-square"
-                                src="/hit8oxScreenshots/2.mp4" autoPlay loop />
+                                src="/hit8oxScreenshots/2.mp4" />
                             <motion.video
+                                autoPlay
+                                loop
+                                playsInline
+                                muted
+                                webkit-playsInline
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 0.86, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
                                 className="h-60 -mx-7 px-4 aspect-square"
-                                src="/hit8oxScreenshots/3.mp4" autoPlay loop />
+                                src="/hit8oxScreenshots/3.mp4" />
                             <motion.video
+                                autoPlay
+                                loop
+                                playsInline
+                                muted
+                                webkit-playsInline
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
                                 className="h-60 mx-auto px-4 aspect-square"
-                                src="/hit8oxScreenshots/4.mp4" autoPlay loop />
+                                src="/hit8oxScreenshots/4.mp4" />
                             <motion.video
+                                autoPlay
+                                loop
+                                playsInline
+                                muted
+                                webkit-playsInline
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
                                 className="h-60 mx-auto px-4 aspect-square"
-                                src="/hit8oxScreenshots/5.mp4" autoPlay loop />
+                                src="/hit8oxScreenshots/5.mp4" />
                         </CarouselHorizontal>
                     </motion.div>
                 </div>

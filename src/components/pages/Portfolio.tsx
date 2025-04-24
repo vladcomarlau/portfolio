@@ -32,7 +32,7 @@ export default function Portfolio() {
                             <p className="indent-5 text-sm italic mx-5 pb-2">
                                 Having my 3D head scanned with an iPhone floating around felt too obtrusive..
                             </p>
-                            <video className="rounded-b" src="/portfolio.mp4" loop autoPlay />
+                            <video className="rounded-b" src="/portfolio.mp4" loop autoPlay muted playsInline webkit-playsInline/>
                         </div>
                     </div>
                 </div>

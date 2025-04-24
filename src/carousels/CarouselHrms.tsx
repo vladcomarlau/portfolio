@@ -9,13 +9,13 @@ export default function CarouselHrms(props:any) {
             <PresenceDiv key="organisation">
                 <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
                     <div className="font-gothic my-1 mt-3 text-xl">Organigram</div>
-                    <img className="w-full rounded-box" src="hrmsScreenshots/1.jpeg" />
+                    <img className="w-full rounded-box" src="hrmsScreenshots/1.png" />
                 </div>
             </PresenceDiv>
 
             <PresenceDiv key="organisationText">
                 <div className="mt-11">
-                    <img className="rounded-box absolute h-full w-full block max-h-[60vh]" src="hrmsScreenshots/1.jpeg" />
+                    <img className="rounded-box absolute h-full w-full block max-h-[60vh]" src="hrmsScreenshots/1.png" />
                     <div className="rounded-box relative -mb-11 pb-7 -mb-11 max-h-[60vh] backdrop-blur-2xl text-shadow-sm pt-2 font-light px-5 overflow-scroll">
                         <div className="px-3 py-1 text-left text-stone-950">
                             <div className="font-gothic my-3 text-xl">Organigram</div>
@@ -34,13 +34,13 @@ export default function CarouselHrms(props:any) {
             <PresenceDiv key="salary">
                 <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
                     <div className="font-gothic my-1 mt-3 text-xl">Salary</div>
-                    <img className="w-full rounded-box" src="hrmsScreenshots/2.jpeg" />
+                    <img className="w-full rounded-box" src="hrmsScreenshots/2.png" />
                 </div>
             </PresenceDiv>
 
             <PresenceDiv key="salaryText">
                 <div className="mt-11">
-                    <img className="rounded-box absolute h-full w-full" src="hrmsScreenshots/1.jpeg" />
+                    <img className="rounded-box absolute h-full w-full" src="hrmsScreenshots/1.png" />
                     <div className="text-center rounded-box relative h-auto pb-7 -mb-11 max-h-[60vh] backdrop-blur-2xl text-shadow-sm pt-2 font-light px-5 text-stone-950 overflow-scroll">
                         <div className="px-3 py-1 text-left">
                             <div className="my-3 text-xl font-gothic">Salary</div>
@@ -58,13 +58,13 @@ export default function CarouselHrms(props:any) {
             <PresenceDiv key="leaves">
                 <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
                     <div className="font-gothic my-1 mt-3 text-xl">Leaves</div>
-                    <img className="w-full rounded-box" src="hrmsScreenshots/3.jpeg" />
+                    <img className="w-full rounded-box" src="hrmsScreenshots/3.png" />
                 </div>
             </PresenceDiv>
 
             <PresenceDiv key="leavesText">
                 <div className="mt-11">
-                    <img className="rounded-box absolute h-full w-full" src="hrmsScreenshots/3.jpeg" />
+                    <img className="rounded-box absolute h-full w-full" src="hrmsScreenshots/3.png" />
                     <div className="text-center rounded-box relative h-auto pb-7 -mb-11 max-h-[60vh] backdrop-blur-2xl text-shadow-sm pt-2 font-light px-5 text-stone-950 overflow-scroll">
                         <div className="px-3 py-1 text-left">
                             <div className="my-3 text-xl font-gothic">Leaves</div>
@@ -86,13 +86,13 @@ export default function CarouselHrms(props:any) {
             <PresenceDiv key="accountsManager">
             <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
                     <div className="font-gothic my-1 mt-3 text-xl">Accounts Manager</div>
-                    <img className="w-full rounded-box" src="hrmsScreenshots/4.jpeg" />
+                    <img className="w-full rounded-box" src="hrmsScreenshots/4.png" />
                 </div>
             </PresenceDiv>
 
             <PresenceDiv key="accountsManagerText">
                 <div className="mt-11">
-                    <img className="rounded-box absolute h-full w-full" src="hrmsScreenshots/4.jpeg" />
+                    <img className="rounded-box absolute h-full w-full" src="hrmsScreenshots/4.png" />
                     <div className="text-center rounded-box relative h-auto pb-7 bg-stone-100/30 -mb-11 -mb-11 max-h-[60vh] backdrop-blur-2xl text-shadow-sm pt-2 font-light px-5 text-stone-950 overflow-scroll">
                         <div className="px-3 py-1 text-left">
                             <div className="my-3 text-xl font-gothic">Accounts Manager</div>
@@ -117,13 +117,13 @@ export default function CarouselHrms(props:any) {
             <PresenceDiv key="performanceEvaluation">
                 <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
                     <div className="font-gothic my-1 mt-3 text-xl">Performance Evaluation</div>
-                    <img className="w-full rounded-box" src="hrmsScreenshots/5.jpeg" />
+                    <img className="w-full rounded-box" src="hrmsScreenshots/5.png" />
                 </div>
             </PresenceDiv>
 
             <PresenceDiv key="performanceEvaluationText">
                 <div className="mt-11">
-                    <img className="rounded-box absolute h-full w-full" src="hrmsScreenshots/5.jpeg" />
+                    <img className="rounded-box absolute h-full w-full" src="hrmsScreenshots/5.png" />
                     <div className="text-center rounded-box relative h-auto pb-7 -mb-11 max-h-[60vh] backdrop-blur-2xl text-shadow-sm pt-2 font-light px-5 text-stone-950 overflow-scroll">
                         <div className="px-3 py-1 text-left">
                             <div className="my-3 text-xl font-gothic">Performance Evaluation</div>
@@ -136,6 +136,13 @@ export default function CarouselHrms(props:any) {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </PresenceDiv>
+
+            <PresenceDiv key="profile">
+                <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
+                    <div className="font-gothic my-1 mt-3 text-xl">Profile</div>
+                    <img className="w-full rounded-box" src="hrmsScreenshots/6.png" />
                 </div>
             </PresenceDiv>
         </CarouselFade>

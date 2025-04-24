@@ -32,23 +32,35 @@ export default function NightRide() {
                         className="w-screen absolute left-0 top-7 md:-ml-30 -ml-9">
                         <CarouselHorizontal scrollYProgress={scrollYProgress} offset={-1150}>
                             <motion.video
+                                loop
+                                muted
+                                playsInline
+                                webkit-playsInline
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
                                 className="h-60 mx-auto px-4 aspect-square"
-                                src="/nightRideScreenshots/1.mp4" autoPlay loop />
+                                src="/nightRideScreenshots/1.mp4" autoPlay  />
                             <motion.video
+                                loop
+                                muted
+                                playsInline
+                                webkit-playsInline
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
                                 className="h-60 mx-auto px-4 aspect-square"
-                                src="/nightRideScreenshots/2.mp4" autoPlay loop />
+                                src="/nightRideScreenshots/2.mp4" autoPlay  />
                             <motion.video
+                                loop
+                                muted
+                                playsInline
+                                webkit-playsInline
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
                                 className="h-60 mx-auto px-4 aspect-square"
-                                src="/nightRideScreenshots/3.mp4" autoPlay loop />
+                                src="/nightRideScreenshots/3.mp4" autoPlay  />
                         </CarouselHorizontal>
                     </motion.div>
                 </div>

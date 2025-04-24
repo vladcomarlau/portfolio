@@ -21,7 +21,7 @@ export default function Hrms() {
                 <HrmsCard/>
             </RotateScrollL>
 
-            <motion.div ref={targetRef} className="h-600">
+            <motion.div ref={targetRef} className="h-650">
                 <motion.div className="sticky top-20"
                 initial={{ scale: 0.2, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}

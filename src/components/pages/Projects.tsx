@@ -22,7 +22,7 @@ export default function Projects() {
                     <Hrms/>
                 </div>
 
-                <div className="mt-[55vh]">
+                <div className="mt-[75vh]">
                     <Portfolio />
                 </div>
 
