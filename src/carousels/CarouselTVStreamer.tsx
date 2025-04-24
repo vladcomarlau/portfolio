@@ -1,4 +1,5 @@
-import CarouselHorizontal from "./CarouselHorizontal";
+import PresenceDivSlide from "../animations/PresenceDivSlide";
+import CarouselFade from "./CarouselFade";
 
 export default function CarouselTVStreamer(props:any) {
     
@@ -9,14 +10,34 @@ export default function CarouselTVStreamer(props:any) {
                     LIVE TV WEB STREAMER
                 </span>
             </div>
-            <div className="absolute left-0 top-0 py-5">
-                <CarouselHorizontal scrollYProgress={props.scrollYProgress} width={1470}>
-                    <img className="w-[500px] object-contain rounded-field" src="/tvStreamerScreenshots/1.png"/>
-                    <img className="w-[500px] object-contain rounded-field" src="/tvStreamerScreenshots/4.png"/>
-                    <img className="w-[450px] object-contain rounded-field" src="/tvStreamerScreenshots/2.png"/>
-                    <img className="w-[500px] object-contain rounded-field" src="/tvStreamerScreenshots/3.png"/>
-                </CarouselHorizontal>
+
+            <CarouselFade scrollYProgress={props.scrollYProgress}>
+                
+                <PresenceDivSlide key="1">
+                    <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
+                        <img className="w-full rounded-box" src="tvStreamerScreenshots/1.png" />
+                    </div>
+                </PresenceDivSlide>
+
+                <PresenceDivSlide key="2">
+                    <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
+                        <img className="w-full rounded-box" src="tvStreamerScreenshots/2.png" />
+                    </div>
+                </PresenceDivSlide>
+
+                <PresenceDivSlide key="3">
+                    <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
+                        <img className="w-full rounded-box" src="tvStreamerScreenshots/3.png" />
+                    </div>
+                </PresenceDivSlide>
+
+                <PresenceDivSlide key="4">
+                    <div className="w-[min(80vw,80vh)] h-[min(80vw,70vh)] max-w-4xl mx-auto">
+                        <img className="w-full rounded-box" src="tvStreamerScreenshots/4.png" />
+                    </div>
+                </PresenceDivSlide>
+                
+            </CarouselFade>
             </div>
-        </div>
     )
 }

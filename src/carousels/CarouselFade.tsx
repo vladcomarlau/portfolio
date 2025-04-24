@@ -23,7 +23,7 @@ export default function CarouselFade(props:any) {
 
     return (
         <>
-            <motion.div className={props.className ?? ""}>
+            <motion.div className={(props.className ?? "")}>
                 <ul>
                     <AnimatePresence> 
                         {/*orice motion element din interior trebuie sa aiba un key*/}
