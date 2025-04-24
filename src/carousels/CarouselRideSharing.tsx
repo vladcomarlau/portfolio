@@ -12,43 +12,43 @@ export default function CarouselRideSharing(props: any) {
             </div>
             <CarouselFade scrollYProgress={props.scrollYProgress}>
                 <PresenceDiv key="img1">
-                    <div className="h-[80vh]">
+                    <div className="h-[75vh]">
                         <img className="h-full m-auto rounded-box" src="rideSharingScreenshots/1.png" />
                     </div>
                 </PresenceDiv>
 
                 <PresenceDiv key="img2">
-                    <div className="h-[80vh]">
+                    <div className="h-[75vh]">
                         <img className="h-full m-auto rounded-box" src="rideSharingScreenshots/3.png" />
                     </div>
                 </PresenceDiv>
 
                 <PresenceDiv key="img3">
-                    <div className="h-[80vh]">
+                    <div className="h-[75vh]">
                         <img className="h-full m-auto rounded-box" src="rideSharingScreenshots/2.png" />
                     </div>
                 </PresenceDiv>
 
                 <PresenceDiv key="img4">
-                    <div className="h-[80vh]">
+                    <div className="h-[75vh]">
                         <img className="h-full m-auto rounded-box" src="rideSharingScreenshots/4.png" />
                     </div>
                 </PresenceDiv>
 
                 <PresenceDiv key="img5">
-                    <div className="h-[80vh]">
+                    <div className="h-[75vh]">
                         <img className="h-full m-auto rounded-box" src="rideSharingScreenshots/5.png" />
                     </div>
                 </PresenceDiv>
 
                 <PresenceDiv key="img6">
-                    <div className="h-[80vh]">
+                    <div className="h-[75vh]">
                         <img className="h-full m-auto rounded-box" src="rideSharingScreenshots/6.png" />
                     </div>
                 </PresenceDiv>
 
                 <PresenceDiv key="img7">
-                    <div className="h-[80vh]">
+                    <div className="h-[75vh]">
                         <img className="h-full m-auto rounded-box" src="rideSharingScreenshots/7.png" />
                     </div>
                 </PresenceDiv>

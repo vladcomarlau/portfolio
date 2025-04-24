@@ -18,7 +18,7 @@ export default function NightRide() {
                 <NightRideCard/>
             </RotateScrollR>
 
-            <motion.div ref={targetRef} className="h-50">
+            <motion.div ref={targetRef} className="h-120">
                 <div className="sticky top-20">
                     <div className="pb-1 mx-2">
                         <span className="font-gothic bg-custom-primary px-2 text-custom-secondary text-xs">
@@ -29,8 +29,8 @@ export default function NightRide() {
                         initial={{ scale: 0 }}
                         whileInView={{ scale: 1 }}
                         transition={{ type: "spring", duration: 1 }}
-                        className="w-screen absolute left-0 top-7 md:-ml-30 -ml-9">
-                        <CarouselHorizontal scrollYProgress={scrollYProgress} offset={-1150}>
+                        className="absolute left-0 top-7">
+                        <CarouselHorizontal scrollYProgress={scrollYProgress} width={480}>
                             <motion.video
                                 loop
                                 muted
@@ -39,7 +39,7 @@ export default function NightRide() {
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-60 mx-auto px-4 aspect-square"
+                                className="w-60 px-4 aspect-square"
                                 src="/nightRideScreenshots/1.mp4" autoPlay  />
                             <motion.video
                                 loop
@@ -49,7 +49,7 @@ export default function NightRide() {
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-60 mx-auto px-4 aspect-square"
+                                className="w-60 px-4 aspect-square"
                                 src="/nightRideScreenshots/2.mp4" autoPlay  />
                             <motion.video
                                 loop
@@ -59,7 +59,7 @@ export default function NightRide() {
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-60 mx-auto px-4 aspect-square"
+                                className="w-60 px-4 aspect-square"
                                 src="/nightRideScreenshots/3.mp4" autoPlay  />
                         </CarouselHorizontal>
                     </motion.div>

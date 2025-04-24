@@ -11,7 +11,6 @@ export default function RideSharing() {
         target: targetRef,
         offset: ["start end", "end start"],
     });
-
   
     return (
         <>              

@@ -21,7 +21,7 @@ export default function Hit8ox() {
             <motion.div ref={targetRef} className="h-200">
                 <div className="sticky top-20">
                     <div className="pb-1 mx-2">
-                        <span className="font-gothic bg-custom-primary px-2 text-custom-secondary text-xs">
+                        <span className="font-gothic bg-custom-primary px-2 text-custom-secondary text-xs ">
                             3D FIGHTING GAME
                         </span>
                     </div>
@@ -29,8 +29,8 @@ export default function Hit8ox() {
                         initial={{ scale: 0 }}
                         whileInView={{ scale: 1 }}
                         transition={{ type: "spring", duration: 1 }}
-                        className="w-screen absolute left-0 top-7 md:-ml-29 -ml-9">
-                        <CarouselHorizontal scrollYProgress={scrollYProgress} offset={-1100}>
+                        className="absolute left-0 top-7">
+                        <CarouselHorizontal scrollYProgress={scrollYProgress} width={905}>
                             <motion.video
                                 autoPlay
                                 loop
@@ -40,7 +40,7 @@ export default function Hit8ox() {
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-60 mx-auto px-4 aspect-square"
+                                className="h-60 px-4 aspect-square"
                                 src="/hit8oxScreenshots/1.mp4" />
                             <motion.video
                                 autoPlay
@@ -51,7 +51,7 @@ export default function Hit8ox() {
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-60 mx-auto px-4 aspect-square"
+                                className="h-60 px-4 aspect-square"
                                 src="/hit8oxScreenshots/2.mp4" />
                             <motion.video
                                 autoPlay
@@ -73,7 +73,7 @@ export default function Hit8ox() {
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-60 mx-auto px-4 aspect-square"
+                                className="h-60 px-4 aspect-square"
                                 src="/hit8oxScreenshots/4.mp4" />
                             <motion.video
                                 autoPlay
@@ -84,7 +84,7 @@ export default function Hit8ox() {
                                 initial={{scale: 0.5, filter: "blur(60px)" }}
                                 whileInView={{ scale: 1, filter: "blur(0px)" }}
                                 transition={{ duration: 0.2 }}
-                                className="h-60 mx-auto px-4 aspect-square"
+                                className="h-60 px-4 aspect-square"
                                 src="/hit8oxScreenshots/5.mp4" />
                         </CarouselHorizontal>
                     </motion.div>
