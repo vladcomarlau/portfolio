@@ -6,7 +6,7 @@ export default function Portfolio() {
   
     return (
         <>
-            <RotateScrollL className="mb-30">
+            <RotateScrollL className="mb-10">
                 <PortfolioCard/>
             </RotateScrollL>
 

@@ -26,11 +26,11 @@ export default function Projects() {
                     <Portfolio />
                 </div>
 
-                <div className="px-3">
+                <div className="px-3 mt-[15vh]">
                     <TVStreamer />
                 </div>                
 
-                <div className='px-3 text-stone-100 font-extralight mt-20'>
+                <div className='px-3 text-stone-100 font-extralight mt-30'>
                     <RideSharing/>
                 </div>
 

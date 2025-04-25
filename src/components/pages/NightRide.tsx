@@ -29,7 +29,7 @@ export default function NightRide() {
                         initial={{ scale: 0 }}
                         whileInView={{ scale: 1 }}
                         transition={{ type: "spring", duration: 1 }}
-                        className="absolute left-0 top-7">
+                        className="absolute left-0 top-7 pt-4">
                         <CarouselHorizontal scrollYProgress={scrollYProgress} width={480}>
                             <motion.video
                                 loop

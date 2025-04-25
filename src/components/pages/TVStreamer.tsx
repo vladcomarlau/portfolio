@@ -15,7 +15,7 @@ export default function TVStreamer
   
     return (
         <>              
-            <RotateScrollR className="mt-0 mb-40">
+            <RotateScrollR className="mt-0 mb-20">
                 <TVStreamerCard/>
             </RotateScrollR>
 

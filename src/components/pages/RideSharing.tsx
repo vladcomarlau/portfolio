@@ -18,7 +18,7 @@ export default function RideSharing() {
                 <RideSharingCard/>
             </RotateScrollL>
 
-            <motion.div ref={targetRef} className="h-600 mt-40">
+            <motion.div ref={targetRef} className="h-600">
                 <motion.div className="sticky top-20 my-30"
                     initial={{ scale: 0.8, opacity: 0.3 }}
                     whileInView={{ scale: 1, opacity: 1 }}

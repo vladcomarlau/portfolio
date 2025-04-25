@@ -25,16 +25,16 @@ const Title = () => {
       <motion.div 
         initial={{ backgroundColor: "rgba(245,245,244,1)" }}
         animate={{ backgroundColor: "rgba(255,255,255,0)" }}
-        transition={{delay:1.7, time:0.2}}
+        transition={{ delay: 1.7, time: 0.2 }}
         className="perspective-distant bg-stone-100" ref={targetRef}>
         <motion.div
-          initial={{x:-400, opacity: 0 }}
-          animate={{x:0, opacity: 1 }}
-          transition={{ type: "spring", delay:0.3, duration: 2 }}
+          initial={{ x: -400, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ type: "spring", delay: 0.3, duration: 2 }}
           style={{ rotateX: rotateX }}
-          className="h-screen backface-hidden origin-bottom mx-auto bg-stone-100 overflow-scroll">
-          <div className=" text-stone-950 h-screen max-w-5xl mx-auto">
-            <div className="font-gothic italic md:text-8xl sm:text-6xl text-6xl p-3 font-extrabold
+          className="h-screen backface-hidden origin-bottom mx-auto bg-stone-100">
+          <div className=" text-stone-950 h-screen max-w-5xl mx-auto overflow-scroll">
+            <div className="font-gothic italic md:text-8xl sm:text-6xl text-6xl p-3 mx-4 font-extrabold
                 rounded-b-none text-shadow-md pt-27 sm:px-10">
               <div>Vlad</div>
               <div>Comarlau</div>
@@ -55,7 +55,6 @@ const Title = () => {
               </p>
             </div>
           </div>
-          
         </motion.div>
       </motion.div>
     </>
