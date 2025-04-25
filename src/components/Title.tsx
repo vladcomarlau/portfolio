@@ -32,7 +32,7 @@ const Title = () => {
           animate={{x:0, opacity: 1 }}
           transition={{ type: "spring", delay:0.3, duration: 2 }}
           style={{ rotateX: rotateX }}
-          className="h-screen backface-hidden origin-bottom mx-auto bg-stone-100">
+          className="h-screen backface-hidden origin-bottom mx-auto bg-stone-100 overflow-scroll">
           <div className=" text-stone-950 h-screen max-w-5xl mx-auto">
             <div className="font-gothic italic md:text-8xl sm:text-6xl text-6xl p-3 font-extrabold
                 rounded-b-none text-shadow-md pt-27 sm:px-10">
@@ -41,11 +41,11 @@ const Title = () => {
             </div>
 
             <div className='sm:w-2/3 w-6/7 mb-8 rounded-pill mx-auto p-3 shadow-xl backdrop-blur-sm max-h-[40vh]
-            font-extralight border border-stone-500/15 mt-[2px] overflow-scroll max-w-3xl'
+            font-extralight border border-stone-500/15 mt-[2px] max-w-3xl overflow-scroll'
               style={{
                 backgroundColor: "rgb(69,10,223)",
               }}>
-              <div className='font-gothic text-base-100 mx-3'>
+              <div className='font-gothic text-base-100 mx-3 mb-5'>
                 About me
               </div>
               <p className='indent-5 text-base-100/90 font-serif'>

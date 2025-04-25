@@ -26,7 +26,7 @@ export default function CarouselTVStreamer(props:any) {
                 </PresenceDivSlide>
 
                 <PresenceDivSlide key="3">
-                    <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
+                    <div className="w-[min(70vw,70vh)] h-[min(70vw,70vh)] max-w-4xl mx-auto">
                         <img className="w-full rounded-box" src="tvStreamerScreenshots/3.png" />
                     </div>
                 </PresenceDivSlide>
@@ -38,6 +38,6 @@ export default function CarouselTVStreamer(props:any) {
                 </PresenceDivSlide>
                 
             </CarouselFade>
-            </div>
+        </div>
     )
 }
