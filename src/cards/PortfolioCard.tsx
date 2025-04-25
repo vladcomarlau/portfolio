@@ -21,7 +21,7 @@ export default function PortfolioCard() {
                 </p>
             </div>
 
-            <SkillBadges skills={["React", "Vite", "TypeScript", "Kubernetes", "Docker", "Jenkins", "AWS", "npm", "Motion Framer", "TailwindCSS"]}/>
+            <SkillBadges skills={["React", "Vite", "TypeScript", "Kubernetes", "Docker", "Private Docker Registry", "Jenkins", "AWS", "npm", "Motion Framer", "TailwindCSS"]}/>
         </div>
     )
 }
