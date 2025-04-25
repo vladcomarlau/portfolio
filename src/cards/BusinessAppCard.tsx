@@ -24,9 +24,9 @@ export default function BusinessAppCard() {
                 </p>
             </div>
 
-            <SkillBadges skills={["Java", "Spring", "Spring Boot", "JWT", "React", 
+            <SkillBadges skills={["Java", "Spring", "Spring Boot", "React", 
                 "Vite", "TypeScript", "Kubernetes", "Docker", "Jenkins", "AWS", 
-                "Gradle", "npm", "Motion Framer", "TailwindCSS", "OpenAi API"]}/>
+                "Gradle", "npm", "JWT",, "Motion", "TailwindCSS", "OpenAi API"]}/>
         </div>
     )
 }

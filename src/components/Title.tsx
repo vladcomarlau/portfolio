@@ -13,11 +13,11 @@ const Title = () => {
   const rotateXRaw = useTransform(
     scrollYProgress, 
     [0.5, 0.8, 1], 
-    [0, 80, 100]
+    [0, 80, 105]
   );
 
   const rotateX = useSpring(
-    rotateXRaw, { damping: 80, stiffness: 1500, restDelta: 0.001 }
+    rotateXRaw, { damping: 85, stiffness: 1200, restDelta: 0.001 }
   );
   
   return (
@@ -49,7 +49,7 @@ const Title = () => {
                 About me
               </div>
               <p className='indent-5 text-base-100/90 font-serif '>
-                <Typewriter text="Focused on full-stack web development using Java, Spring Boot, React, REST APIs and
+                <Typewriter text="Currently focused on full-stack web development using Java, Spring Boot, React, REST APIs and
                 relational databases. Dual wielding bachelor's degree: one in computer science from
                 the Faculty of Cybernetics, Statistics and Economic Informatics, the other one in management (ASE). Enthusiastic about problem-solving and continuous learning."/>
               </p>
