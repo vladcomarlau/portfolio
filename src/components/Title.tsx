@@ -50,8 +50,9 @@ const Title = () => {
               </div>
               <p className='indent-5 text-base-100/90 font-serif '>
                 <Typewriter text="Currently focused on full-stack web development using Java, Spring Boot, React, REST APIs and
-                relational databases. Dual wielding bachelor's degree: one in computer science from
-                the Faculty of Cybernetics, Statistics and Economic Informatics, the other one in management (ASE). Enthusiastic about problem-solving and continuous learning."/>
+                relational databases with 6 years of QA experience in game development. Recently graduated with a bachelor's degree in 
+                computer science from the Faculty of Cybernetics, Statistics and Economic Informatics and holding a Management Bachelor's degree.
+                Enthusiastic about problem solving and continuous learning."/>
               </p>
             </div>
           </div>
