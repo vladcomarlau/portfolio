@@ -219,3 +219,22 @@
         rgba(0, 0, 0, 0) 0.5%,
         rgba(0, 0, 0, 1) 37.5%);
 }
+
+
+.textGradient2 {
+  background: linear-gradient(-45deg, #d70303, #e73c7e, #0086b7, #00959a);
+  background-size: 400% 400%;
+  animation: gradient2 3s ease infinite;
+}
+
+@keyframes gradient2 {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}

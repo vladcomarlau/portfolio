@@ -13,7 +13,7 @@ const Title = () => {
   const rotateXRaw = useTransform(
     scrollYProgress, 
     [0.5, 0.8, 1], 
-    [0, 80, 110]
+    [0, 80, 100]
   );
 
   const rotateX = useSpring(
@@ -48,7 +48,7 @@ const Title = () => {
               <div className='font-gothic text-base-100 mx-3 mb-5'>
                 About me
               </div>
-              <p className='indent-5 text-base-100/90 font-serif'>
+              <p className='indent-5 text-base-100/90 font-serif '>
                 <Typewriter text="Focused on full-stack web development using Java, Spring Boot, React, REST APIs and
                 relational databases. Dual wielding bachelor's degree: one in computer science from
                 the Faculty of Cybernetics, Statistics and Economic Informatics, the other one in management (ASE). Enthusiastic about problem-solving and continuous learning."/>
