@@ -16,11 +16,12 @@ export default function HrmsCard() {
             </div>
             <div className="font-serif py-3">
                 <p className="indent-10 p-2">
-                    Web app developed for employee, organizational, payroll, leaves and performance evaluation management for use on intranet across entire organization.
+                    Web app developed for employee, organizational, payroll, leaves and performance 
+                    evaluation management for use on intranet across entire organization.
                 </p>
             </div>
 
-            <SkillBadges skills={["Java", "Spring", "Spring Boot", "RESTful API", "React", "JavaScript", "H2 database", "Axios", "SQL", "Maven", "JWT", "npm", "OpenAi API", "Bootstrap", "Intellij Idea"]}/>
+            <SkillBadges skills={["Java", "Spring", "Spring Boot", "Spring Security", "RESTful API", "React", "JavaScript", "H2 database", "Axios", "SQL", "Maven", "JWT", "npm", "OpenAi API", "Bootstrap", "Intellij Idea"]}/>
         </div>
     )
 }
