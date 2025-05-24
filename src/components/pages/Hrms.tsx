@@ -29,12 +29,12 @@ export default function Hrms() {
                     <div className="p-3 mx-auto 
                         md:w-[min(80vw,80vh)] md:h-[min(80vw,80vh)]
                         w-[min(90vw,90vh)] h-[min(90vw,90vh)] max-w-4xl">
-                        <iframe className="w-full h-full"
+                        <iframe className="w-full"
                                     src="https://www.youtube.com/embed/e_mEPLk1xgM?si=0aB8b0Gp2jY6ITzJ" 
-                                    title="YouTube video player" frameborder="0" 
+                                    title="YouTube video player" frameBorder="0" 
                                     allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                    referrerpolicy="strict-origin-when-cross-origin" 
-                                    allowfullscreen></iframe>
+                                    referrerPolicy="strict-origin-when-cross-origin" 
+                                    allowFullScreen></iframe>
                     </div>
                 </motion.div>
             </motion.div>
