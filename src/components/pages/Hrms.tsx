@@ -21,6 +21,25 @@ export default function Hrms() {
                 <HrmsCard/>
             </RotateScrollL>
 
+            <motion.div ref={targetRef} className="h-250">
+                <motion.div className="sticky top-20"
+                    initial={{ scale: 0.8, opacity: 0.2 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1}}>
+                    <div className="p-3 mx-auto 
+                        md:w-[min(80vw,80vh)] md:h-[min(80vw,80vh)]
+                        w-[min(90vw,90vh)] h-[min(90vw,90vh)] max-w-4xl">
+                        <iframe className="w-full h-full"
+                                    src="https://www.youtube.com/embed/e_mEPLk1xgM?si=0aB8b0Gp2jY6ITzJ" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" 
+                                    allowfullscreen></iframe>
+                    </div>
+                </motion.div>
+            </motion.div>
+            
+
             <motion.div ref={targetRef} className="h-650">
                 <motion.div className="sticky top-20"
                 initial={{ scale: 0.2, opacity: 0 }}
