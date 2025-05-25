@@ -15,25 +15,25 @@ export default function CarouselTVStreamer(props:any) {
                 
                 <PresenceDivSlide key="1">
                     <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
-                        <img className="w-full rounded-box" src="tvStreamerScreenshots/1.png" />
+                        <img className="w-full rounded-box" src="tvStreamerScreenshots/1.jpeg" />
                     </div>
                 </PresenceDivSlide>
 
                 <PresenceDivSlide key="2">
                     <div className="w-[min(80vw,80vh)] h-[min(80vw,80vh)] max-w-4xl mx-auto">
-                        <img className="w-full rounded-box" src="tvStreamerScreenshots/2.png" />
+                        <img className="w-full rounded-box" src="tvStreamerScreenshots/2.jpeg" />
                     </div>
                 </PresenceDivSlide>
 
                 <PresenceDivSlide key="3">
                     <div className="w-[min(70vw,70vh)] h-[min(70vw,70vh)] max-w-4xl mx-auto">
-                        <img className="w-full rounded-box" src="tvStreamerScreenshots/3.png" />
+                        <img className="w-full rounded-box" src="tvStreamerScreenshots/3.jpeg" />
                     </div>
                 </PresenceDivSlide>
 
                 <PresenceDivSlide key="4">
                     <div className="w-[min(80vw,80vh)] h-[min(80vw,70vh)] max-w-4xl mx-auto">
-                        <img className="w-full rounded-box" src="tvStreamerScreenshots/4.png" />
+                        <img className="w-full rounded-box" src="tvStreamerScreenshots/4.jpeg" />
                     </div>
                 </PresenceDivSlide>
                 

@@ -1,7 +1,9 @@
 export default function TryButton(props:any) {
     return(
-        <a className="p-2 mx-1 btn bg-custom-tertiary backdrop-blur-xl text-custom-primary  font-bold h-8 shadow-none border-1 border-stone-100
-            hover:text-stone-200 hover:bg-stone-950/40 hover:shadow-xl textGradient2"
+        <a className="p-2 mx-1 btn bg-custom-tertiary backdrop-blur-xl 
+            text-custom-primary font-bold h-8 shadow-none border-1 border-stone-100
+            hover:text-stone-200 hover:bg-stone-950/40 hover:shadow-xl textGradient2
+            rounded-md hover:scale-105 transition-all"
             href={props.url}
             target="_"
             style={{ borderColor: "rgb(128, 251, 210)" }}>

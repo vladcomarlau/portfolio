@@ -189,7 +189,7 @@
 }
 
 .btn-custom-a {
-  @apply p-2 mx-1 btn backdrop-blur-xl font-bold h-8 shadow-none border-1 border-stone-100;
+  @apply p-2 mx-1 btn backdrop-blur-xl font-bold h-8 shadow-none border-1 border-stone-100 rounded-md;
   background-color: rgb(69, 10, 223);
   color: rgb(128, 251, 210);
   border-color: rgb(128, 251, 210);

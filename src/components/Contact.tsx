@@ -1,5 +1,6 @@
 import { motion, useScroll, useSpring, useTransform } from "motion/react"
 import { useRef } from "react";
+import DownCV from "../buttons/DownCV";
 
 export default function Contact () {
   const targetRef = useRef(null)
@@ -55,6 +56,7 @@ export default function Contact () {
                   <a className="block underline" href="tel:0752230503" >0752 230 503</a>
                   <a className="block underline" href="mailto: vladcom95@gmail.com" >vladcom95@gmail.com</a>
                   <a className="block underline" target="_" href="https://linkedin.com/in/comarlauvlad/" >linkedin.com/in/comarlauvlad/</a>
+                  <div className="mt-5 -ml-6"><DownCV pdfURL={'/Vlad-Constantin_COMARLAU_2025_en.pdf'}/></div>
                 </div>
               </p>
             </div>

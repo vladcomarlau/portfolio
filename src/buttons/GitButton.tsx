@@ -1,7 +1,7 @@
 export default function GitButton(props:any) {
     return(
         <a className="p-2 btn bg-custom-tertiary backdrop-blur-xl text-custom-primary font-bold h-8 shadow-none border-1 border-stone-100
-            hover:text-stone-200 hover:bg-stone-950/40 hover:shadow-xl"
+            hover:text-stone-200 hover:bg-stone-950/40 hover:shadow-xl rounded-md hover:scale-105 transition-all"
             href={props.url}
             target="_blank"
             style={{ borderColor:"rgb(128, 251, 210)"}}>

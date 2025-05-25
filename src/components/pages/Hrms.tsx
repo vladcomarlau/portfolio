@@ -4,8 +4,6 @@ import CarouselHrms from "../../carousels/CarouselHrms";
 import HrmsCard from "../../cards/HrmsCard";
 import { motion, useScroll } from "motion/react";
 
-
-
 export default function Hrms() {
     const targetRef = useRef(null);
     
@@ -29,7 +27,7 @@ export default function Hrms() {
                     <div className="p-3 mx-auto 
                         md:w-[min(80vw,80vh)] md:h-[min(80vw,80vh)]
                         w-[min(90vw,90vh)] h-[min(90vw,90vh)] max-w-4xl">
-                        <iframe className="w-full min-h-120"
+                        <iframe className="w-full min-h-90"
                                     src="https://www.youtube.com/embed/e_mEPLk1xgM?si=0aB8b0Gp2jY6ITzJ" 
                                     title="YouTube video player" frameBorder="0" 
                                     allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
