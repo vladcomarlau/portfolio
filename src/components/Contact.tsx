@@ -56,7 +56,15 @@ export default function Contact () {
                   <a className="block underline" href="tel:0752230503" >0752 230 503</a>
                   <a className="block underline" href="mailto: vladcom95@gmail.com" >vladcom95@gmail.com</a>
                   <a className="block underline" target="_" href="https://linkedin.com/in/comarlauvlad/" >linkedin.com/in/comarlauvlad/</a>
-                  <div className="mt-3 md:-ml-1 -ml-5"><DownCV pdfURL={'/Vlad-Constantin_COMARLAU_2025_en.pdf'}/></div>
+                  <div className="mt-4 md:-ml-1 -ml-5">
+                    <a href={'/Vlad-Constantin_COMARLAU_2025_en.pdf'} download
+                        className="btn-custom-a">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+                        <div className="text-nowrap text-xs shadow-xl overflow-hidden -ml-5">Download CV / Resume PDF</div>
+                    </a>
+                  </div>
                 </div>
               </p>
             </div>
