@@ -1,6 +1,5 @@
 import { motion, useScroll, useSpring, useTransform } from "motion/react"
 import { useRef } from "react";
-import DownCV from "../buttons/DownCV";
 
 export default function Contact () {
   const targetRef = useRef(null)
