@@ -28,9 +28,10 @@ export default function BusinessAppCard() {
                 <p className="indent-10 mt-3"> The app will be hosted on this website when it's ready.</p>
             </div>
 
-            <SkillBadges skills={["Java", "Spring", "Spring Boot", "Spring Security", "OAuth2 Authorization Server", "react-oidc-context", "RESTful API", "Vite", "React", 
-                "Vite", "TypeScript", "Kubernetes", "Docker", "Private Docker Registry", "Jenkins", "AWS", 
-                "Gradle", "npm", "JWT", "Motion", "TailwindCSS", "OpenAi API"]}/>
+            <SkillBadges skills={["Java", "Spring", "Spring Boot", "Spring Security", "OAuth2 Authorization Server", 
+                "react-oidc-context", "RESTful API", "JSON", "Vite", "React", "Vite", "TypeScript", "Kubernetes", 
+                "Docker", "Private Docker Registry", "Jenkins", "AWS", "Gradle", "npm", "JWT", "Motion", 
+                "TailwindCSS", "OpenAi API", "Git", "GitHub"]}/>
         </div>
     )
 }

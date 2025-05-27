@@ -17,11 +17,14 @@ export default function PortfolioCard() {
             </div>
             <div className="font-serif py-3 text-stone-100">
                 <p className="indent-10">
-                    Personal projects website with scroll based animations and 3D components.
+                    Personal projects website with scroll based animations and 3D components. 
+                    A bit overkill but has a complete CI/CD pipeline with GitHub webhooks 
+                    (for learning purposes).
                 </p>
             </div>
 
-            <SkillBadges skills={["React", "Vite", "TypeScript", "Kubernetes", "Docker", "Private Docker Registry", "Jenkins", "AWS", "npm", "Motion Framer", "TailwindCSS"]}/>
+            <SkillBadges skills={["React", "Vite", "TypeScript", "Kubernetes", "Docker", "Private Docker Registry", 
+                "Jenkins", "AWS", "npm", "Motion Framer", "TailwindCSS", "Git", "GitHub"]}/>
         </div>
     )
 }

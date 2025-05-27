@@ -21,7 +21,7 @@ export default function HrmsCard() {
                 </p>
             </div>
 
-            <SkillBadges skills={["Java", "Spring", "Spring Boot", "Spring Security", "RESTful API", "React", "JavaScript", "H2 database", "Axios", "SQL", "Maven", "JWT", "npm", "OpenAi API", "Bootstrap", "Intellij Idea"]}/>
+            <SkillBadges skills={["Java", "Spring", "Spring Boot", "Spring Security", "RESTful API", "JSON", "React", "JavaScript", "H2 database", "Axios", "SQL", "Maven", "JWT", "npm", "OpenAi API", "Bootstrap", "Intellij Idea"]}/>
         </div>
     )
 }

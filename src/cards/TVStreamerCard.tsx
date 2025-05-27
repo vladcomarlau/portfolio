@@ -17,6 +17,8 @@ export default function TVStreamerCard() {
             <div className="font-serif py-3 text-stone-100">
                 <p className="indent-10 p-2">
                     Live TV web server (tv box remote control and viewer) with auto-updating channel list.
+                    Uses arduino board to send IR signals and a capture card to obtain the image of the TV signal
+                    and broadcast it over the internet.
                 </p>
             </div>
 
