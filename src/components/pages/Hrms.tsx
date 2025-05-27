@@ -27,7 +27,7 @@ export default function Hrms() {
                     <div className="p-3 mx-auto 
                         md:w-[min(80vw,80vh)] md:h-[min(80vw,80vh)]
                         w-[min(90vw,90vh)] h-[min(90vw,90vh)] max-w-4xl">
-                        <iframe className="w-full min-h-90"
+                        <iframe className="w-full min-h-82"
                                     src="https://www.youtube.com/embed/e_mEPLk1xgM?si=0aB8b0Gp2jY6ITzJ" 
                                     title="YouTube video player" frameBorder="0" 
                                     allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
