@@ -21,7 +21,7 @@ export default function BusinessAppCard() {
                 <p className="indent-10 mb-4 font-bold italic">Work in progress</p>
                 <p className="indent-10">
                      A full stack web application designed to help businesses track and 
-                     manage their financial and operational performance using A.i. 
+                     manage their financial and operational performance using A.i.
                 </p>
                 <p className="indent-10 mt-3"> Secure backend with responsive frontend hosted on AWS EC2 
                     with complete CI/CD pipeline.</p>

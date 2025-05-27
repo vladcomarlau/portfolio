@@ -21,7 +21,7 @@ export default function Hit8oxCard() {
                     "Hit8ox" is a 3D fighting video game with a rendering engine built from the ground up with animation, particles systems and real time reflections. Game fits in under 42k of memory with 3 environments, character customisation, AI and 2 player mode. An animation and environment editor was built alongside.
                 </p>
                 <p className="indent-10 py-3">
-                    Over 95.000 views on X.com with appreciation from Tom Hall (DOOM designer).
+                    With over 95.000 views on X.com was publicly praised by DOOM and Wolfenstein 3D Creative Director Tom Hall on Twitter (X).
                 </p>
             </div>
 
