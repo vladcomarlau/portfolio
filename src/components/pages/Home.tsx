@@ -76,7 +76,8 @@ export default function Home() {
         <div className='fixed w-full mt-5'
           style={{ top: "0", zIndex: "300" }}>
           <AnimatePresence>
-            {!isTitleVisible && <MenuBar handlePageChange={handlePageChange} Page={Page} setActiveButton={setActiveButton} activeButton={activeButton}/>}
+            {!isTitleVisible && <MenuBar handlePageChange={handlePageChange} Page={Page} 
+              setActiveButton={setActiveButton} activeButton={activeButton}/>}
           </AnimatePresence>
         </div>
 

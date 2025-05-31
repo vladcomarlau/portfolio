@@ -120,8 +120,8 @@ export default function Hit8ox() {
                     whileInView={{ scale: 1, opacity: 1 }}
                     transition={{ type: "spring", duration: 1}}>
                     <div className="p-3 mx-auto 
-                        md:w-[min(80vw,80vh)] md:h-[min(80vw,80vh)]
-                        w-[min(90vw,90vh)] h-[min(90vw,90vh)] max-w-4xl">
+                        md:w-[min(80vw,80vh)] md:h-[min(30vw,30vh)]
+                        w-[min(90vw,90vh)] h-[min(40vw,40vh)] max-w-4xl">
                         <img src="/hit8oxScreenshots/6.jpeg"  />
                     </div>
                 </motion.div>

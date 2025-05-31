@@ -40,7 +40,7 @@ export default function Projects() {
                     <Hit8ox/>
                 </div>
 
-                <div className='px-3 text-stone-100 font-extralight mt-120'>
+                <div className='px-3 text-stone-100 font-extralight mt-40'>
                     <NightRide/>
                 </div>
             </div>
