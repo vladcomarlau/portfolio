@@ -18,6 +18,24 @@ export default function Hit8ox() {
                 <Hit8oxCard/>
             </RotateScrollR>
 
+            <div className="h-250">
+                <motion.div className="sticky top-20"
+                    initial={{ scale: 0.8, opacity: 0.2 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1}}>
+                    <div className="p-3 mx-auto 
+                        md:w-[min(80vw,80vh)] md:h-[min(80vw,80vh)]
+                        w-[min(90vw,90vh)] h-[min(90vw,90vh)] max-w-4xl">
+                        <iframe className="w-full min-h-82"
+                                    src="https://www.youtube.com/embed/sFq478qXQg8?si=2dlA1A6SAxjy14EJ&amp;start=312" 
+                                    title="YouTube video player" frameBorder="0" 
+                                    allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerPolicy="strict-origin-when-cross-origin" 
+                                    allowFullScreen></iframe>
+                    </div>
+                </motion.div>
+            </div>
+
             <motion.div ref={targetRef} className="h-200">
                 <div className="sticky top-20">
                     <div className="pb-1 mx-2">
@@ -90,6 +108,24 @@ export default function Hit8ox() {
                     </motion.div>
                 </div>
             </motion.div>
+
+            <div className="mt-100">
+                <div className="font-serif py-3">
+                    <p className="indent-10 p-2">
+                        Words from Tom Hall, id Software co-founder and DOOM, Wolfenstein 3D creative director.
+                    </p>
+                </div>
+                <motion.div
+                    initial={{ scale: 0.8, opacity: 0.2 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1}}>
+                    <div className="p-3 mx-auto 
+                        md:w-[min(80vw,80vh)] md:h-[min(80vw,80vh)]
+                        w-[min(90vw,90vh)] h-[min(90vw,90vh)] max-w-4xl">
+                        <img src="/hit8oxScreenshots/6.jpeg"  />
+                    </div>
+                </motion.div>
+            </div>
         </>
     )
 }

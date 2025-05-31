@@ -21,8 +21,11 @@ export default function Hit8oxCard() {
                     "Hit8ox" is a 3D fighting video game with a rendering engine built from the ground up with animation, particles systems and real time reflections. Game fits in under 42k of memory with 3 environments, character customisation, AI and 2 player mode. An animation and environment editor was built alongside.
                 </p>
                 <p className="indent-10 py-3">
-                    With over 95.000 views on X.com was publicly praised by DOOM and Wolfenstein 3D 
-                    creative director Tom Hall on Twitter (X).
+                    Was publicly praised by DOOM and Wolfenstein 3D creative director 
+                    Tom Hall on Twitter (X). Placed 6th in itch.io top 20 games of April 2023.
+                </p>
+                <p className="indent-10 py-3">
+                    Placed 6th in itch.io top 20 games of April 2023.
                 </p>
             </div>
 
