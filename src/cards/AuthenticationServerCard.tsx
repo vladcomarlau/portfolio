@@ -19,7 +19,11 @@ export default function AuthenticationServerCard() {
                 <p className="indent-10">
                      A full stack web app that configures and implements Spring Security OAuth2 login. A dedicated authentication server that securely logins users based on multiple redirects.
                 </p>
-                <p className="indent-10 mt-3"> Secure backend with responsive frontend deployed (for devops learning purposes) on AWS EC2 with complete CI/CD pipeline.</p>
+                <p className="indent-10"> 
+                    <br></br>- Secure backend REST API with Java, Spring Boot, Spring Security, OAuth2 Authorization Server and Gradle for build automation
+                    <br></br>- Deployed on AWS EC2 using Kubernetes (K3S), Docker with private Docker registry
+                    <br></br>- Vite React frontend using TypeScript, TailwindCSS, react-oidc-context
+                    <br></br>- Automated CI/CD pipeline using Jenkins</p>
             </div>
 
             <SkillBadges skills={["Java", "Spring", "Spring Boot", "Spring Security", "OAuth2 Authorization Server", 
