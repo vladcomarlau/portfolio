@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 
-export default function RotateScrollL(props:any) {
+export default function RotateScrollR(props:any) {
 
     const ref = useRef(null)
 

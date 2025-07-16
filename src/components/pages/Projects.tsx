@@ -1,3 +1,4 @@
+import RotateScrollL from "../../animations/RotateScrollR";
 import AuthenticationServerCard from "../../cards/AuthenticationServerCard";
 import Hit8ox from "./Hit8ox";
 import Hrms from "./Hrms";
@@ -15,7 +16,9 @@ export default function Projects() {
                 <div className='text-stone-100 font-bold font-gothic px-2 italic text-2xl'>/ PROJECTS </div>
                 
                 <div className='px-3 text-stone-100 font-extralight'>
-                    <AuthenticationServerCard/>
+                    <RotateScrollL>
+                        <AuthenticationServerCard/>
+                    </RotateScrollL>
                 </div>
 
                 <div className='px-3 text-stone-100 font-extralight'>
