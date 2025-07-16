@@ -1,15 +1,16 @@
 import { useRef } from "react";
 import RotateScrollR from "../../animations/RotateScrollR";
 import { motion } from "motion/react";
-import BusinessAppCard from "../../cards/BusinessAppCard";
+import AuthenticationServerCard from "../../cards/AuthenticationServerCard";
 
-export default function BusinessApp() {
+
+export default function AuthenticationServer() {
     const targetRef = useRef(null);
   
     return (
         <div className="">
             <RotateScrollR className="mb-30 mt-10 ">
-                <BusinessAppCard/>
+                <AuthenticationServerCard/>
             </RotateScrollR>
 
             <motion.div ref={targetRef} className="">
