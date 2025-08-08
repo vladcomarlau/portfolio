@@ -51,11 +51,11 @@ const Title = () => {
               <p className='indent-5 text-base-100/90 font-serif '>
                 <p className="indent-5 ml-3 mb-3">
                 <Typewriter text="
-                  Currently pursuing a master’s in Advanced Cybersecurity at the University Politehnica of Bucharest.
-                  Recently graduated in the top 3 of my class with a bachelor's in computer science from 
-                  the Faculty of Cybernetics, Statistics and Economic Informatics and also holding a Management bachelor's degree.            
+                  Currently pursuing a master’s degree in Advanced Cybersecurity at the Politehnica University.
+                  Recently graduated in the top 3 of my class with a bachelor's degree in computer science from 
+                  the Faculty of Cybernetics, Statistics and Economic Informatics. Graduated with a bachelor's degree in Management (ASE).
                   Hands on experience with full-stack web development using Java, Spring Boot, React, REST APIs and
-                  relational databases. 6 years of QA experience in game development. Enthusiastic about problem solving and continuous learning."/>
+                  relational databases. Worked 6 years in QA game development. Enthusiastic about problem solving and continuous learning."/>
                 </p>
               </p>
             </div>
